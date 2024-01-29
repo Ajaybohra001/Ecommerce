@@ -1,0 +1,38 @@
+﻿@model SuccessiveCart.Models.Domain.Users
+
+@{
+}
+<form method="post" action="AddUser" class="mt-5">
+  @*   <div class="mb-3">
+        <label for="" class="form-label">UserId</label>
+        <input type="text" class="form-control" asp-for="UserID">
+
+    </div> *@
+    <div class="mb-3">
+        <label for="" class="form-label">UserName</label>
+        <input type="text" class="form-control" asp-for="UserName">
+
+    </div>  
+    <div class="mb-3">
+        <label for="" class="form-label">UserEmail</label>
+        <input type="email" class="form-control" asp-for="UserEmail">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">UserPassword</label>
+        <input type="text" class="form-control" asp-for="UserPassword">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">PhoneNumber</label>
+        <input type="number" class="form-control" asp-for="UserPhoneNo">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Role</label>
+        <input type="text" class="form-control" asp-for="UserRole">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

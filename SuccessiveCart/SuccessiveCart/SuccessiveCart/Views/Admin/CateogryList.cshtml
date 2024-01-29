@@ -1,0 +1,33 @@
+﻿@model List<SuccessiveCart.Models.Domain.Cateogry>
+<h1>Cateogries</h1>
+<div>
+
+
+    <a class="nav-item nav-link active" asp-area="" asp-controller="Admin" asp-action="AddCateogry"><i class="fa fa-tachometer-alt me-2"></i>Add Cateogry</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+           <th>Id</th>
+            <th>Name</th>
+           
+            <th>  </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cateogry in Model)
+        {
+            <tr>
+                <td>@cateogry.CateogryId</td>
+                <td>@cateogry.CateogryName</td>
+                
+
+                <td><a href="/Admin/ViewCateogry/@cateogry.CateogryId">View</a></td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+

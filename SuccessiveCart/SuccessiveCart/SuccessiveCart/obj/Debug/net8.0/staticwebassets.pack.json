@@ -1,0 +1,1585 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SuccessiveCart.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SuccessiveCart.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\404.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\READ-ME.txt",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\READ-ME.txt"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\blank.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\blank.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\bootstrap-5-admin-template.jpg",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\bootstrap-5-admin-template.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\button.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\button.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\chart.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\chart.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\css\\style.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\element.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\element.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\form.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\form.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\index.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\js\\main.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\signin.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\signin.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\signup.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\signup.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\table.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\table.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\typography.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\typography.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\AdminDashboardContent\\widget.html",
+      "PackagePath": "staticwebassets\\AdminDashboardContent\\widget.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\blog.html",
+      "PackagePath": "staticwebassets\\blog.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\cart.html",
+      "PackagePath": "staticwebassets\\cart.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\category.html",
+      "PackagePath": "staticwebassets\\category.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\checkout.html",
+      "PackagePath": "staticwebassets\\checkout.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\contact.html",
+      "PackagePath": "staticwebassets\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\contact_process.php",
+      "PackagePath": "staticwebassets\\contact_process.php"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\style.map",
+      "PackagePath": "staticwebassets\\css\\style.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\elements.html",
+      "PackagePath": "staticwebassets\\elements.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\b1.jpg",
+      "PackagePath": "staticwebassets\\img\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\b2.jpg",
+      "PackagePath": "staticwebassets\\img\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\b3.jpg",
+      "PackagePath": "staticwebassets\\img\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\banner\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\banner\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\add.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\add.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\img\\blog\\author.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\blog1.png",
+      "PackagePath": "staticwebassets\\img\\blog\\blog1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\blog2.png",
+      "PackagePath": "staticwebassets\\img\\blog\\blog2.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\blog3.png",
+      "PackagePath": "staticwebassets\\img\\blog\\blog3.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\c1.png",
+      "PackagePath": "staticwebassets\\img\\blog\\c1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\c2.png",
+      "PackagePath": "staticwebassets\\img\\blog\\c2.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\c3.png",
+      "PackagePath": "staticwebassets\\img\\blog\\c3.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\cat-post\\cat-post-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\cat-post\\cat-post-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\cat-post\\cat-post-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\cat-post\\cat-post-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\cat-post\\cat-post-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\cat-post\\cat-post-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\causes\\causes-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\causes\\causes-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\causes\\causes-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\causes\\causes-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\causes\\causes-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\causes\\causes-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\feature-img1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\feature-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\main-blog\\m-blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\main-blog\\m-blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\main-blog\\m-blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\main-blog\\m-blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\main-blog\\m-blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\main-blog\\m-blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\main-blog\\m-blog-4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\main-blog\\m-blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\main-blog\\m-blog-5.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\main-blog\\m-blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\next.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\next.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\popular-post\\post1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\popular-post\\post1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\popular-post\\post2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\popular-post\\post2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\popular-post\\post3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\popular-post\\post3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\popular-post\\post4.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\popular-post\\post4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\post-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\post-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\blog\\prev.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\prev.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\breadcrumb\\checkout-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\breadcrumb\\checkout-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\_DS_Store",
+      "PackagePath": "staticwebassets\\img\\elements"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\user1.png",
+      "PackagePath": "staticwebassets\\img\\elements\\user1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\elements\\user2.png",
+      "PackagePath": "staticwebassets\\img\\elements\\user2.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\fevicon.png",
+      "PackagePath": "staticwebassets\\img\\fevicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i1.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i2.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i3.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i4.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i5.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i6.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i7.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\i8.jpg",
+      "PackagePath": "staticwebassets\\img\\instagram\\i8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i1.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i2.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i2.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i3.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i3.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i4.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i4.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i5.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i5.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\instagram\\widget-i6.png",
+      "PackagePath": "staticwebassets\\img\\instagram\\widget-i6.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\login.jpg",
+      "PackagePath": "staticwebassets\\img\\login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\offer-bg.png",
+      "PackagePath": "staticwebassets\\img\\offer-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\feature-product\\f-p-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\feature-product\\f-p-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\feature-product\\f-p-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\feature-product\\f-p-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\feature-product\\f-p-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\feature-product\\f-p-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i5.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i6.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i7.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\inspired-product\\i8.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\inspired-product\\i8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-10.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-11.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-12.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-5.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-6.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-7.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-8.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\most-product\\m-product-9.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\most-product\\m-product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\new-product\\n1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\new-product\\n1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\new-product\\n2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\new-product\\n2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\new-product\\n3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\new-product\\n3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\new-product\\n4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\new-product\\n4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\new-product\\new-product1.png",
+      "PackagePath": "staticwebassets\\img\\product\\new-product\\new-product1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\card.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\card.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\cart-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\review-1.png",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\review-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\review-2.png",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\review-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\review-3.png",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\review-3.png"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\s-product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\s-product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\s-product-s-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\s-product-s-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\s-product-s-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\s-product-s-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\img\\product\\single-product\\s-product-s-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\single-product\\s-product-s-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\js\\jquery.form.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\js\\mail-script.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\stellar.js",
+      "PackagePath": "staticwebassets\\js\\stellar.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\prepros-6.config",
+      "PackagePath": "staticwebassets\\prepros-6.config"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_blog.scss",
+      "PackagePath": "staticwebassets\\scss\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_button.scss",
+      "PackagePath": "staticwebassets\\scss\\_button.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_clients.scss",
+      "PackagePath": "staticwebassets\\scss\\_clients.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\scss\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_elements.scss",
+      "PackagePath": "staticwebassets\\scss\\_elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_feature.scss",
+      "PackagePath": "staticwebassets\\scss\\_feature.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_offer.scss",
+      "PackagePath": "staticwebassets\\scss\\_offer.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_predefine.scss",
+      "PackagePath": "staticwebassets\\scss\\_predefine.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_product.scss",
+      "PackagePath": "staticwebassets\\scss\\_product.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_reset.scss",
+      "PackagePath": "staticwebassets\\scss\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\single-blog.html",
+      "PackagePath": "staticwebassets\\single-blog.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\single-product.html",
+      "PackagePath": "staticwebassets\\single-product.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\tracking.html",
+      "PackagePath": "staticwebassets\\tracking.html"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\animate-css\\animate.css",
+      "PackagePath": "staticwebassets\\vendors\\animate-css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\animate-css\\wow.min.js",
+      "PackagePath": "staticwebassets\\vendors\\animate-css\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\bootstrap-datepicker\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\vendors\\bootstrap-datepicker\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\bootstrap-datepicker\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\vendors\\bootstrap-datepicker\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\bootstrap-datepicker\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\vendors\\bootstrap-datepicker\\bootstrap-select.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\bootstrap-datepicker\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\vendors\\bootstrap-datepicker\\bootstrap-select.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\counter-up\\jquery.counterup.js",
+      "PackagePath": "staticwebassets\\vendors\\counter-up\\jquery.counterup.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\counter-up\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\vendors\\counter-up\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\flipclock\\timer.js",
+      "PackagePath": "staticwebassets\\vendors\\flipclock\\timer.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\isotope\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendors\\isotope\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\isotope\\isotope-min.js",
+      "PackagePath": "staticwebassets\\vendors\\isotope\\isotope-min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\jquery-ui\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\vendors\\jquery-ui\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\jquery-ui\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\vendors\\jquery-ui\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\lightbox\\simpleLightbox.css",
+      "PackagePath": "staticwebassets\\vendors\\lightbox\\simpleLightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\lightbox\\simpleLightbox.min.js",
+      "PackagePath": "staticwebassets\\vendors\\lightbox\\simpleLightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\fonts\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\fonts\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\fonts\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\fonts\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\fonts\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\fonts\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\fonts\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\fonts\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\fonts\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\fonts\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\linericon\\style.css",
+      "PackagePath": "staticwebassets\\vendors\\linericon\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\nice-select\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\vendors\\nice-select\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\nice-select\\css\\style.css",
+      "PackagePath": "staticwebassets\\vendors\\nice-select\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\nice-select\\js\\jquery.nice-select.js",
+      "PackagePath": "staticwebassets\\vendors\\nice-select\\js\\jquery.nice-select.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\nice-select\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\vendors\\nice-select\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\owl-carousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\vendors\\owl-carousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\owl-carousel\\assets\\animated.css",
+      "PackagePath": "staticwebassets\\vendors\\owl-carousel\\assets\\animated.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\owl-carousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\vendors\\owl-carousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\owl-carousel\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\vendors\\owl-carousel\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ajay.bohra\\Documents\\SuccessiveCart\\SuccessiveCart\\SuccessiveCart\\wwwroot\\vendors\\owl-carousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\vendors\\owl-carousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SuccessiveCart.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SuccessiveCart.props",
+      "PackagePath": "build\\SuccessiveCart.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SuccessiveCart.props",
+      "PackagePath": "buildMultiTargeting\\SuccessiveCart.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SuccessiveCart.props",
+      "PackagePath": "buildTransitive\\SuccessiveCart.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,27 @@
+﻿@model SuccessiveCart.Models.Domain.Cateogry
+
+<h1> Edit Cateogry</h1>
+<form method="post" action="ViewCateogry">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="CateogryId" readonly>
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="CateogryName">
+
+    </div>
+   
+    <div class="mb-3">
+        <label for="" class="form-label">Photo</label>
+        <input type="file class="form-control" asp-for="CateogryPhoto">
+
+    </div>
+    
+
+
+    <button type="submit" class="btn btn-primary" asp-action="ViewCateogry" asp-controller="Admin">Submit</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="DeleteCateogry" asp-controller="Admin">Delete</button>
+</form>
