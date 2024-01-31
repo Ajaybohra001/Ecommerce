@@ -33,7 +33,15 @@ namespace SuccessiveCart.Migrations
                     b.Property<int>("ProductQuantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("ProductsProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("CartId");
+
+                    b.HasIndex("ProductsProductId");
 
                     b.ToTable("CartItems");
                 });
@@ -67,9 +75,6 @@ namespace SuccessiveCart.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
 
-                    b.Property<int?>("CartItemCartId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CateogryId")
                         .HasColumnType("int");
 
@@ -99,8 +104,6 @@ namespace SuccessiveCart.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.HasIndex("CartItemCartId");
-
                     b.HasIndex("CateogryId");
 
                     b.ToTable("Products");
@@ -114,6 +117,10 @@ namespace SuccessiveCart.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserID"));
 
+                    b.Property<string>("ConfirmPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -126,11 +133,10 @@ namespace SuccessiveCart.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("UserPhoneNo")
-                        .HasColumnType("bigint");
+                    b.Property<string>("UserPhoneNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserRole")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserID");
@@ -146,15 +152,19 @@ namespace SuccessiveCart.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("SuccessiveCart.Models.Domain.Products", "Products")
+                        .WithMany()
+                        .HasForeignKey("ProductsProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Products");
+
                     b.Navigation("Users");
                 });
 
             modelBuilder.Entity("SuccessiveCart.Models.Domain.Products", b =>
                 {
-                    b.HasOne("SuccessiveCart.Models.Domain.CartItem", null)
-                        .WithMany("Products")
-                        .HasForeignKey("CartItemCartId");
-
                     b.HasOne("SuccessiveCart.Models.Domain.Cateogry", "Cateogries")
                         .WithMany("Products")
                         .HasForeignKey("CateogryId")
@@ -162,11 +172,6 @@ namespace SuccessiveCart.Migrations
                         .IsRequired();
 
                     b.Navigation("Cateogries");
-                });
-
-            modelBuilder.Entity("SuccessiveCart.Models.Domain.CartItem", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("SuccessiveCart.Models.Domain.Cateogry", b =>

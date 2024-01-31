@@ -10,6 +10,7 @@ namespace SuccessiveCart.Controllers
     {
        private readonly SuccessiveCartDbContext _cartContext;
 
+
         public LoginController(SuccessiveCartDbContext cartContext)
         {
             _cartContext = cartContext;
@@ -18,7 +19,10 @@ namespace SuccessiveCart.Controllers
         [HttpGet]
         public IActionResult AdminDashboard()
         {
-            return View();
+            ViewBag.CategoryList=_cartContext.Cateogries.ToList();
+            var prod = _cartContext.Products.ToList();
+
+            return View(prod);
         }
         [HttpGet]
         public IActionResult UserDashboard()

@@ -1,57 +1,64 @@
-﻿@model SuccessiveCart.Models.Domain.Products
-<h1> Edit Product</h1>
-<form method="post" action="ViewProduct">
+﻿
+
+      *@
+      @model SuccessiveCart.Models.Dto.ProductViewModel
+
+@{
+    var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
+    ViewData["Title"] = "Admin Dashboard";
+}
+<h1>Edit Product</h1>
+<form method="post" action="ViewProduct" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="" class="form-label">Product Id</label>
+        <label asp-for="ProductId" class="form-label">Product Id</label>
         <input type="text" class="form-control" asp-for="ProductId" readonly>
-
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Cateogry Id</label>
-        <input type="number" class="form-control" asp-for="CateogryId" >
-
-    </div>
+        <div class="mb-3">
+            <label for="ProductCategoryId" class="form-label">Product Category</label>
+            <select class="form-select" aria-label="Product Category" asp-for="CateogryId" required>
+                <option selected disabled value="">Select Category</option>
+                @if (CategoryList != null)
+                {
+                    @foreach (var x in CategoryList)
+                    {
+                        @if (x.CateogryName != "All")
+                        {
+                            <option value="@x.CateogryId">@x.CateogryName</option>
+                        }
+                    }
+                }
+            </select>
+            <span asp-validation-for="CateogryId" class="text-danger"></span>
+        </div>
     <div class="mb-3">
-        <label for="" class="form-label">Product Name</label>
+        <label asp-for="ProductName" class="form-label">Product Name</label>
         <input type="text" class="form-control" asp-for="ProductName">
-
     </div>
-
     <div class="mb-3">
-        <label for="" class="form-label">Product Photo</label>
+        <label asp-for="ProductPhoto" class="form-label">Product Photo</label>
         <input type="file" class="form-control" asp-for="ProductPhoto">
-
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Product Price</label>
+        <label asp-for="ProductPrice" class="form-label">Product Price</label>
         <input type="number" class="form-control" asp-for="ProductPrice">
-
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Product Description</label>
+        <label asp-for="ProductDescription" class="form-label">Product Description</label>
         <input type="text" class="form-control" asp-for="ProductDescription">
-
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">Product Create Date</label>
+        <label asp-for="ProductCreatedDate" class="form-label">Product Create Date</label>
         <input type="datetime" class="form-control" asp-for="ProductCreatedDate">
-
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Available </label>
-        <input type="text" class="form-control" asp-for="IsAvailable">
-
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="availableCheckbox" asp-for="IsAvailable">
+        <label class="form-check-label" for="availableCheckbox">Available</label>
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Trending </label>
-        <input type="text" class="form-control" asp-for="IsTrending">
-
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="trendingCheckbox" asp-for="IsTrending">
+        <label class="form-check-label" for="trendingCheckbox">Trending</label>
     </div>
-
-
-
-
-    <button type="submit" class="btn btn-primary" asp-action="ViewProduct" asp-controller="Admin">Submit</button>
-
+    <button type="submit" class="btn btn-primary">Update</button>
     <button type="submit" class="btn btn-danger" asp-action="DeleteProduct" asp-controller="Admin">Delete</button>
 </form>

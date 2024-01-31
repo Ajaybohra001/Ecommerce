@@ -10,7 +10,7 @@ namespace SuccessiveCart.Models.Domain
         public string ProductName { get; set; }
 
         public double ProductPrice {  get; set; }
-        public string ProductPhoto {  get; set; }
+        public string? ProductPhoto {  get; set; }
 
         public string ProductDescription {  get; set; }
 
@@ -20,8 +20,10 @@ namespace SuccessiveCart.Models.Domain
 
         public DateTime ProductCreatedDate { get; set; }
 
-        public Cateogry Cateogries { get; set; }
         public int CateogryId { get; set; }
+        [ForeignKey("CateogryId")]
+        public Cateogry Cateogries { get; set; }
+      
       
        
 

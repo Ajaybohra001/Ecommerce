@@ -7,13 +7,17 @@ namespace SuccessiveCart.Models.Domain
     {
         [Key]
         [ForeignKey("Users")]
+
+        [Required]
         public int CartId { get; set; }
+        [Required]
         public int ProductId {  get; set; }
         public int ProductQuantity {  get; set; }
 
-        public ICollection<Products> Products { get; set; }
+        public Products Products { get; set; }
        
-        public virtual Users Users { get; set; }
+        public int UserId {  get; set; }
+        public  Users Users { get; set; }
       
        
 

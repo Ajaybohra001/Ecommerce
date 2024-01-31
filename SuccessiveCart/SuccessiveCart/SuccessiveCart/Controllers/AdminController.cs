@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
@@ -10,39 +11,53 @@ namespace SuccessiveCart.Controllers
     public class AdminController : Controller
     {
         private readonly SuccessiveCartDbContext _dbContext;
-        public AdminController(SuccessiveCartDbContext dbContext)
+        private readonly IWebHostEnvironment WebHostEnvironment;
+
+        public AdminController(SuccessiveCartDbContext dbContext,IWebHostEnvironment webHostEnvironment )
         {
             _dbContext = dbContext;
+            this.WebHostEnvironment= webHostEnvironment;
+            _dbContext.Products.Include(u=>u.Cateogries);
+            
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
 
         
         public IActionResult Products()
         {
-            var products =  _dbContext.Products.ToList();
+            var products = _dbContext.Products.ToList();
             return View(products);
         }
+
+       
 
         [HttpGet]
         public IActionResult AddProducts()
         {
+            var cateogryList = _dbContext.Cateogries.ToList();
+            ViewBag.CateogryList = cateogryList;
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProducts(Products model)
+        public async Task<IActionResult> AddProducts(ProductViewModel model)
         {
+            string uniqueFileName = "";
+            if ( model.ProductPhoto!= null)
+            {
+                string uploadFolder = Path.Combine(WebHostEnvironment.WebRootPath, "image");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProductPhoto.FileName;
+                string filePath = Path.Combine(uploadFolder, uniqueFileName);
+                model.ProductPhoto.CopyTo(new FileStream(filePath, FileMode.Create));
+            }
             var newProduct = new Products()
             {
 
-                ProductName=model.ProductName,
-                ProductPrice=model.ProductPrice,
-                ProductPhoto=model.ProductPhoto,
-                ProductDescription=model.ProductDescription,
-                ProductCreatedDate=model.ProductCreatedDate,
+                ProductName = model.ProductName,
+                ProductPrice = model.ProductPrice,
+                ProductPhoto = uniqueFileName,
+                ProductDescription = model.ProductDescription,
+                ProductCreatedDate = DateTime.Now,
                 IsAvailable=model.IsAvailable,
                 IsTrending=model.IsTrending,
                 CateogryId=model.CateogryId
@@ -55,20 +70,22 @@ namespace SuccessiveCart.Controllers
             };
             await _dbContext.Products.AddAsync(newProduct);
             await _dbContext.SaveChangesAsync();
-            return RedirectToAction("Products" , "Admin");
+            TempData["success"] = "Product created successfully";
+            return RedirectToAction("AdminDashboard" , "Login");
         
         }
         [HttpGet]
         public async Task<IActionResult> ViewProduct(int id)
         {
             var product = await _dbContext.Products.FirstOrDefaultAsync(p=>p.ProductId== id);
+            ViewBag.CategoryList=await _dbContext.Cateogries.ToListAsync();
             if (product != null)
             {
-                var viewModel = new Products()
+                var viewModel = new ProductViewModel()
                 {
                     ProductId=product.ProductId,
                     ProductName=product.ProductName,
-                 ProductPhoto=product.ProductPhoto,
+                 //ProductPhoto=product.ProductPhoto,
                  ProductCreatedDate= product.ProductCreatedDate,
                  ProductDescription = product.ProductDescription,
                  ProductPrice=product.ProductPrice,
@@ -82,30 +99,42 @@ namespace SuccessiveCart.Controllers
 
 
                 };
-                return View(viewModel);
+                return await Task.Run(()=> View("ViewProduct",viewModel));
             }
-            return RedirectToAction("Products");
+            return RedirectToAction("AdminDashboard", "Login");
         }
         [HttpPost]
-        public async Task<IActionResult> ViewProduct(Products model)
+        public async Task<IActionResult> ViewProduct(ProductViewModel model)
         {
             var product = await _dbContext.Products.FindAsync(model.ProductId);
+            ViewBag.CategoryList=_dbContext.Cateogries.ToList();
+            string uniqueFileName = "";
+            if (model.ProductPhoto != null)
+            {
+                string uploadFoler = Path.Combine(WebHostEnvironment.WebRootPath, "image");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProductPhoto.FileName;
+                string filePath = Path.Combine(uploadFoler, uniqueFileName);
+                model.ProductPhoto.CopyTo(new FileStream(filePath, FileMode.Create));
+            }
             if (product != null)
             {
                 product.ProductName = model.ProductName;
-                product.ProductPhoto = model.ProductPhoto;
+                product.ProductPhoto = uniqueFileName;
                 product.ProductPrice = model.ProductPrice;
                 product.ProductDescription = model.ProductDescription;
                 product.CateogryId = model.CateogryId;
                 product.IsAvailable = model.IsAvailable;
                 product.IsTrending = model.IsTrending;
                 product.ProductCreatedDate = model.ProductCreatedDate;
-                await _dbContext.SaveChangesAsync();
-                return RedirectToAction("Products");
+               
+               
+
 
             }
-               
-            return RedirectToAction("Products");
+            await _dbContext.SaveChangesAsync();
+            TempData["success"] = "Product Updated successfully";
+
+            return RedirectToAction("AdminDashboard","Login");
         }
 
         [HttpPost]
@@ -117,6 +146,8 @@ namespace SuccessiveCart.Controllers
             {
                 _dbContext.Products.Remove(product);
                 await _dbContext.SaveChangesAsync();
+                TempData["success"] = "Product Deleted successfully";
+
                 return RedirectToAction("Products");
             }
             return RedirectToAction("Products");
@@ -218,11 +249,21 @@ namespace SuccessiveCart.Controllers
         public IActionResult AddCateogry()
 
         {
+
+
             return View();
         }
         [HttpPost]
         public IActionResult AddCateogry(Cateogry model)
         {
+            //string uniqueFileName = "";
+            //if (model.Product != null)
+            //{
+            //    string uploadFolder = Path.Combine(WebHostEnvironment.WebRootPath, "image");
+            //    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProductPhoto.FileName;
+            //    string filePath = Path.Combine(uploadFolder, uniqueFileName);
+            //    model.ProductPhoto.CopyTo(new FileStream(filePath, FileMode.Create));
+            //}
             var cateogry = new Cateogry()
             {
                 CateogryName=model.CateogryName,
@@ -284,6 +325,37 @@ namespace SuccessiveCart.Controllers
             return RedirectToAction("CateogryList");
 
         }
+
+        #region API CALLS
+        [HttpGet]
+        public async Task< IActionResult> GetAll()
+        {
+            var allProducts = _dbContext.Products.ToList();
+            var productList = await _dbContext.Products.ToListAsync();
+            var categoryList = await _dbContext.Cateogries.ToListAsync();
+            var categoryProduct = productList.Join(// outer sequence 
+                       categoryList,  // inner sequence 
+                       product => product.CateogryId,   // outerKeySelector
+                       category => category.CateogryId, // innerKeySelector
+                       (product, category) => new ProductCateogry // result selector
+                       {
+                           ProductId = product.ProductId,
+                           ProductName = product.ProductName,
+                           ProductDescription = product.ProductDescription,
+                           ProductPrice = product.ProductPrice,
+                           ProductPhoto = product.ProductPhoto,
+                           IsAvailable = product.IsAvailable,
+                          
+                           ProductCreatedDate = product.ProductCreatedDate,
+                           IsTrending = product.IsTrending,
+                           CateogryId = category.CateogryId,
+                           CateogryName = category.CateogryName
+                       }).OrderByDescending(x => x.ProductCreatedDate).ToList();
+            //var products = _dbContext.Products.ToList().OrderByDescending(x => x.ProductCreatedDate);
+            return Json(new { data = categoryProduct });
+        }
+
+        #endregion
 
 
 
