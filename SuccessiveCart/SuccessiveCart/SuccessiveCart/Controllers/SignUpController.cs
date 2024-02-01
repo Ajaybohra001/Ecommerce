@@ -22,7 +22,7 @@ namespace SuccessiveCart.Controllers
         {
             if(ModelState.IsValid)
             {
-                if(_cartContext.Users.Any(u=>u.UserName==model.UserName)) 
+                if(_cartContext.Users.Any(u=>u.Name==model.UserName)) 
                 {
                     ModelState.AddModelError("Username", "Username is already taken");
                     return View(model);
@@ -30,7 +30,7 @@ namespace SuccessiveCart.Controllers
 
                 var newUser = new Users()
                 {
-                    UserName = model.UserName,
+                    Name = model.UserName,
                     UserEmail = model.UserEmail,
                     UserPassword = model.UserPassword,
                     UserRole="Public",

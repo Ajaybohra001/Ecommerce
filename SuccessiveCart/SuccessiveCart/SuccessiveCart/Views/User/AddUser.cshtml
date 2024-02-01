@@ -1,4 +1,5 @@
-﻿@model List< SuccessiveCart.Models.Domain.Users>
+﻿@model SuccessiveCart.Models.Domain.Users
+
 @{
     var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
     ViewData["Title"] = "Admin Dashboard";
@@ -106,35 +107,43 @@
     </div>
 </nav>
 
+<form method="post" action="AddUser" class="mt-5">
+    <div class="mb-3">
+        <label for="userName" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="userName" name="UserName" placeholder="Enter user name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
 
-<table class="table table-striped table-hover">
-    <thead class="table-dark">
-        <tr>
-          
-            <th scope="col">Name</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Role</th>
-            <th scope="col">Email</th>
-            <th scope="col">Password</th>
-            <th scope="col">Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
-            <tr>
-                
-                <td>@user.Name</td>
-                <td>@user.UserPhoneNo</td>
-                <td>@user.UserRole</td>
-                <td>@user.UserEmail</td>
-                <td>@user.UserPassword</td>
-                <td>
-                    <a href="ViewUser/@user.Id" class="btn btn-sm btn-primary">View</a>
-                   
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="mb-3">
+        <label for="userEmail" class="form-label">User Email</label>
+        <input type="email" class="form-control" id="userEmail" name="UserEmail" placeholder="Enter email">
+        <span asp-validation-for="UserEmail" class="text-danger"></span>
+    </div>
 
+    <div class="mb-3">
+        <label for="userPassword" class="form-label">User Password</label>
+        <input type="password" class="form-control" id="userPassword" name="UserPassword" placeholder="Enter password">
+        <span asp-validation-for="UserPassword" class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" placeholder="Confirm password">
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="userPhone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="userPhone" name="UserPhoneNo" placeholder="Enter phone number">
+        <span asp-validation-for="UserPhoneNo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="userRole" class="form-label">Role</label>
+        <input type="text" class="form-control" id="userRole" name="UserRole" placeholder="Enter user role">
+        <span asp-validation-for="UserRole" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

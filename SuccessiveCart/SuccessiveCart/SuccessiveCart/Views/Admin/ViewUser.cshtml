@@ -3,14 +3,10 @@
 }
 <h1> Edit User</h1>
 <form method="post" action="ViewUser" >
-    <div class="mb-3">
-        <label for="" class="form-label">Id</label>
-        <input type="text" class="form-control" asp-for="UserID" readonly>
-
-    </div>
+    
     <div class="mb-3">
         <label for="" class="form-label">Name</label>
-        <input type="text" class="form-control" asp-for="UserName">
+        <input type="text" class="form-control" asp-for="Name">
 
     </div>
     <div class="mb-3">
@@ -30,7 +26,7 @@
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Role</label>
-        <input type="text" class="form-control" asp-for="UserRole">
+        <input type="text" class="form-control" asp-for="UserRole" readonly>
 
     </div>
 

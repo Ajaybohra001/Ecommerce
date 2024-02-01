@@ -19,7 +19,7 @@ namespace SuccessiveCart.Controllers
         [HttpGet]
         public IActionResult AdminDashboard()
         {
-            ViewBag.CategoryList=_cartContext.Cateogries.ToList();
+            ViewBag.CategoryList = _cartContext.Cateogries.ToList();
             var prod = _cartContext.Products.ToList();
 
             return View(prod);
@@ -31,36 +31,7 @@ namespace SuccessiveCart.Controllers
         
         }
 
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AdminLogin(AdminViewModel model)
-        {
-            if(ModelState.IsValid) 
-            {
-                var user=await _cartContext.Users.FirstOrDefaultAsync(obj=>obj.UserEmail==model.UserEmail && obj.UserPassword==model.UserPassword);
-
-                if (user != null)
-                {
-                    if (user.UserRole == "Admin")
-                        return RedirectToAction("AdminDashboard");
-
-                    else
-                        return
-
-                            RedirectToAction("UserDashboard");
-                    
-                }
-
-                ModelState.AddModelError(string.Empty, "Invalid UserName and Password");
-            
-            }
-            return RedirectToAction("Login");
-        }
+      
 
         
 

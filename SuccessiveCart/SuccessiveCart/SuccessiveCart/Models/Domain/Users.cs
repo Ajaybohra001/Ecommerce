@@ -1,14 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace SuccessiveCart.Models.Domain
 {
-    public class Users
+    public class Users : IdentityUser
     {
         [Key]
         public int UserID { get; set; }
 
+
+
         [Required]
-        public string? UserName { get; set; }
+        public string? Name { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         public string? UserPhoneNo {  get; set; }
@@ -27,7 +30,7 @@ namespace SuccessiveCart.Models.Domain
         [Compare("UserPassword",ErrorMessage ="Password is not Matched")]
         public string ConfirmPassword {  get; set; }
 
-        public virtual CartItem CartItems { get; set; }
+       
         
         
         

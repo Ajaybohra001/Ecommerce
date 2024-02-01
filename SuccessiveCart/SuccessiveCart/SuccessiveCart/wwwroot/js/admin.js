@@ -1,12 +1,29 @@
+
+//function updateTable(data) {
+//    $('#tblData tbody').empty();
+
+//    $.each(data, function (index, item) {
+//        var row = '<tr>' +
+//            '<td>' + item.productId + '</td>' +
+//            '<td>' + item.productName + '</td>' +
+//            '<td>' + item.productPrice + '</td>' +
+//            '<td>' + item.categoryName + '</td>' +
+//            '<td>' + item.productCreatedDate + '</td>' +
+//            '<td>' + item.isAvailable + '</td>' +
+//            '<td>' + item.isTrending + '</td>' +
+
+//            '</tr>';
+//        $('#tblData tbody').append(row);
+//    });
+//}
+
 var dataTable;
 
 $(document).ready(function () {
-    loadDataTable();
+    updateTable();
 });
 
-function loadDataTable() {
-
-    
+function updateTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": { url: '/Admin/GetAll' },
         "columns": [
@@ -14,7 +31,7 @@ function loadDataTable() {
             { data: 'productName', "width": "15%" },
             { data: 'productPrice', "width": "10%" },
             { data: 'cateogryName', "width": "15%" },
-           
+
             {
                 data: 'productCreatedDate', "width": "15%", render: function (data, type, row) {
                     // Format the date using Moment.js
@@ -22,12 +39,12 @@ function loadDataTable() {
                 }
             },
 
-            
+
             { data: 'isAvailable', "width": "10%" },
             { data: 'isTrending', "width": "15%" },
-            
 
-           
+
+
             {
                 data: 'productId',
                 "render": function (data) {
@@ -35,52 +52,13 @@ function loadDataTable() {
                      <a href="/Admin/ViewProduct/${data}" class="btn btn-primary mx-2"> <i class="bi bi-pencil-square "></i> Edit</a>   
                      
 
-                    
+                     <a onClick=Delete('/admin/DeleteProduct/${data}') class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
                     </div>`
                 },
                 "width": "25%"
             }
         ]
     });
-
-    $('#IsAvailableButton').on('click', function () {
-        var isAvailableChecked = $(this).hasClass('active');
-
-        console.log('Button state:', isAvailableChecked);
-
-        // Use DataTable's search API to filter rows based on button status
-        var columnIndex = 5; // Change this to the correct index
-        var searchTerm = isAvailableChecked ? 'true' : '';
-
-        console.log('Applying search:', searchTerm);
-
-        dataTable.column(columnIndex).search(searchTerm).draw();
-    });
-
-    // Toggle active class on button click
-    $('#IsAvailableButton').on('click', function () {
-        $(this).toggleClass('active');
-    });
-
-    $('#IsTrendingButton').on('click', function () {
-        var isAvailableChecked = $(this).hasClass('active');
-
-        console.log('Button state:', isAvailableChecked);
-
-        // Use DataTable's search API to filter rows based on button status
-        var columnIndex = 6; // Change this to the correct index
-        var searchTerm = isAvailableChecked ? 'true' : '';
-
-        console.log('Applying search:', searchTerm);
-
-        dataTable.column(columnIndex).search(searchTerm).draw();
-    });
-
-    // Toggle active class on button click
-    $('#IsTrendingButton').on('click', function () {
-        $(this).toggleClass('active');
-    });
-
 }
 function editProduct(productId) {
     // Redirect to the edit page with the product ID

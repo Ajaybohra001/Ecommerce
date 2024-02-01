@@ -6,8 +6,6 @@ namespace SuccessiveCart.Models.Domain
     public class CartItem
     {
         [Key]
-        [ForeignKey("Users")]
-
         [Required]
         public int CartId { get; set; }
         [Required]

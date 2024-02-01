@@ -43,6 +43,7 @@ namespace SuccessiveCart.Controllers
         public async Task<IActionResult> AddProducts(ProductViewModel model)
         {
             string uniqueFileName = "";
+           
             if ( model.ProductPhoto!= null)
             {
                 string uploadFolder = Path.Combine(WebHostEnvironment.WebRootPath, "image");
@@ -168,31 +169,40 @@ namespace SuccessiveCart.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AddUser(Users model)
+        public IActionResult AddUser(UserViewModel model)
         {
+            if (model.UserPassword != model.ConfirmPassword)
+            {
+                ModelState.AddModelError(string.Empty, "Password and Confirm Password must match.");
+                return View(model); 
+            }
             var user = new Users()
             {
-               // UserID = model.UserID,
-                UserName = model.UserName,
+               
+                Name = model.Name,
                 UserEmail = model.UserEmail,
                 UserPassword = model.UserPassword,
+                ConfirmPassword=model.ConfirmPassword,
                 UserPhoneNo = model.UserPhoneNo,
-                UserRole = model.UserRole
+                UserRole="User",
+               
             };
+            
+
             _dbContext.Users.Add(user);
             _dbContext.SaveChanges();
             return RedirectToAction("UsersList");
         }
 
         [HttpGet]
-        public async Task<IActionResult> ViewUser(int id)
+        public async Task<IActionResult> ViewUser(string id)
         {
-            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.UserID == id);
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user != null)
             {
                 var viewModel = new Users()
-                { UserID=user.UserID,
-                   UserName= user.UserName,
+                { 
+                   Name= user.Name,
                    UserEmail= user.UserEmail,
                    UserPassword= user.UserPassword,
                    UserPhoneNo= user.UserPhoneNo,
@@ -206,12 +216,12 @@ namespace SuccessiveCart.Controllers
             return RedirectToAction("UsersList");
         }
         [HttpPost]
-        public async Task<IActionResult> ViewUser(Users model)
+        public async Task<IActionResult> ViewUser(UserViewModel model)
         {
-            var user = await _dbContext.Users.FindAsync(model.UserID);
+            var user = await _dbContext.Users.FindAsync(model.Id);
             if(user!=null) 
             {
-                user.UserName=model.UserName;
+                user.Name=model.Name;
                 user.UserEmail= model.UserEmail;
                 user.UserPassword=model.UserPassword;
                 user.UserPhoneNo= model.UserPhoneNo;
@@ -254,24 +264,25 @@ namespace SuccessiveCart.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AddCateogry(Cateogry model)
+        public IActionResult AddCateogry(CateogryViewModel model)
         {
-            //string uniqueFileName = "";
-            //if (model.Product != null)
-            //{
-            //    string uploadFolder = Path.Combine(WebHostEnvironment.WebRootPath, "image");
-            //    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ProductPhoto.FileName;
-            //    string filePath = Path.Combine(uploadFolder, uniqueFileName);
-            //    model.ProductPhoto.CopyTo(new FileStream(filePath, FileMode.Create));
-            //}
+            string uniqueFileName = "";
+            if (model.CateogryPhoto != null)
+            {
+                string uploadFolder = Path.Combine(WebHostEnvironment.WebRootPath, "image");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.CateogryPhoto.FileName;
+                string filePath = Path.Combine(uploadFolder, uniqueFileName);
+                model.CateogryPhoto.CopyTo(new FileStream(filePath, FileMode.Create));
+            }
             var cateogry = new Cateogry()
             {
                 CateogryName=model.CateogryName,
-                CateogryPhoto=model.CateogryPhoto,
+                CateogryPhoto=uniqueFileName
              
             };
             _dbContext.Cateogries.Add(cateogry);
             _dbContext.SaveChanges();
+            
             return RedirectToAction("CateogryList");
         }
 
@@ -326,6 +337,41 @@ namespace SuccessiveCart.Controllers
 
         }
 
+        //[HttpPost]
+        //public IActionResult GetDataByCategory(int categoryId)
+        //{
+        //    var products = _dbContext.Products.Where(p => p.CateogryId == categoryId).ToList();
+        //    return Json(products);
+        //}
+
+        [HttpPost]
+        public IActionResult GetDataByCategory(int categoryId)
+        {
+            var productsWithCategory = _dbContext.Products
+                .Where(p => p.CateogryId == categoryId)
+                .Join(
+                    _dbContext.Cateogries,
+                    product => product.CateogryId,
+                    category => category.CateogryId,
+                    (product, category) => new
+                    {
+                        product.ProductId,
+                        product.ProductName,
+                        product.ProductPrice,
+                        CategoryName = category.CateogryName, // Fetch category name from Categories table
+                        product.ProductCreatedDate,
+                        product.IsAvailable,
+                        product.IsTrending
+                    })
+                .ToList();
+
+            return Json(productsWithCategory);
+        }
+
+
+
+
+
         #region API CALLS
         [HttpGet]
         public async Task< IActionResult> GetAll()
@@ -333,11 +379,11 @@ namespace SuccessiveCart.Controllers
             var allProducts = _dbContext.Products.ToList();
             var productList = await _dbContext.Products.ToListAsync();
             var categoryList = await _dbContext.Cateogries.ToListAsync();
-            var categoryProduct = productList.Join(// outer sequence 
-                       categoryList,  // inner sequence 
-                       product => product.CateogryId,   // outerKeySelector
-                       category => category.CateogryId, // innerKeySelector
-                       (product, category) => new ProductCateogry // result selector
+            var categoryProduct = productList.Join(
+                       categoryList,  
+                       product => product.CateogryId,   
+                       category => category.CateogryId, 
+                       (product, category) => new ProductCateogry 
                        {
                            ProductId = product.ProductId,
                            ProductName = product.ProductName,
@@ -351,7 +397,6 @@ namespace SuccessiveCart.Controllers
                            CateogryId = category.CateogryId,
                            CateogryName = category.CateogryName
                        }).OrderByDescending(x => x.ProductCreatedDate).ToList();
-            //var products = _dbContext.Products.ToList().OrderByDescending(x => x.ProductCreatedDate);
             return Json(new { data = categoryProduct });
         }
 

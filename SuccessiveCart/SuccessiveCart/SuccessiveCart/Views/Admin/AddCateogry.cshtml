@@ -1,24 +1,132 @@
 ﻿@model SuccessiveCart.Models.Domain.Cateogry
 
 @{
+    var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
+    ViewData["Title"] = "Admin Dashboard";
 }
-<form method="post" action="AddCateogry" class="mt-5">
-    @*   <div class="mb-3">
-    <label for="" class="form-label">UserId</label>
-    <input type="text" class="form-control" asp-for="UserID">
+<style>
+    .bgaqua {
+        background: #4549df;
+    }
 
-    </div> *@
-    <div class="mb-3">
-        <label for="" class="form-label">Cateogry Name</label>
-        <input type="text" class="form-control" asp-for="CateogryName">
+    .bglightblue {
+        background: #fbfbfb;
+    }
 
+    .fullwidth {
+        max-width: 100%;
+    }
+
+    .bggrey {
+        background-color: #f2ebeb;
+    }
+
+    .ofxh {
+        overflow-y: hidden;
+    }
+
+    <style >
+    /* Custom CSS for table styling */
+    #tblData {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #tblData th,
+    #tblData td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    #tblData th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    #tblData tr:nth-child(even) {
+        background-color: #f2f2f2
+
+</style>
+<title>Admin Dashboard</title>
+
+<nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" asp-action="AdminDashboard" asp-controller="Login">Admin Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="usersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Manage Users
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="usersDropdown">
+                        <li><a class="dropdown-item" asp-action="UsersList" asp-controller="Admin">All Users</a></li>
+                        <li><a class="dropdown-item" asp-action="AddUser" asp-controller="Admin">Add New User</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-action="CateogryList" asp-controller="Admin">Manage Categories</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="usersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="usersDropdown">
+                            @if (CategoryList != null && CategoryList.Count > 0)
+                            {
+                                foreach (var x in CategoryList)
+                                {
+                                <li>
+                                    <a class="dropdown-item" href="#" onclick="selectCategory('@x.CateogryId', '@x.CateogryName')">@x.CateogryName</a>
+                                </li>
+                                }
+                            }
+                    </ul>
+
+                </li>
+
+            </ul>
+            <ul class="navbar-nav mt-md-4 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fs-4"> Hello </span><span class="fst-italic fw-bold fs-4">@User.Identity!.Name</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" asp-action="Logout" asp-controller="Authentication">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Photo</label>
-        <input type="file" class="form-control" asp-for="CateogryPhoto">
+</nav>
 
+<form method="post" action="AddCateogry" class="mt-5" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        
+                        <div class="mb-3">
+                            <label for="CateogryName" class="form-label">Category Name</label>
+                            <input type="text" class="form-control" asp-for="CateogryName" id="CateogryName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="CateogryPhoto" class="form-label">Photo</label>
+                            <input type="file" class="form-control" asp-for="CateogryPhoto" id="CateogryPhoto">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  
-
-    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
