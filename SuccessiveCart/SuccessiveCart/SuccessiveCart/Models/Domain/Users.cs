@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Operations;
 using System.ComponentModel.DataAnnotations;
 
 namespace SuccessiveCart.Models.Domain
@@ -29,6 +30,8 @@ namespace SuccessiveCart.Models.Domain
         [DataType(DataType.Password)]
         [Compare("UserPassword",ErrorMessage ="Password is not Matched")]
         public string ConfirmPassword {  get; set; }
+
+        public bool isActive {  get; set; }
 
        
         

@@ -22,35 +22,49 @@ namespace SuccessiveCart.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-           /* if (_signInManager.IsSignedIn(User))
+
+            if (_signInManager.IsSignedIn(User))
             {
-                return RedirectToAction("Index", "Home");
-            }*/
+                if (User.IsInRole("Admin"))
+                {
+                    return RedirectToAction("AdminDashboard", "Login");
+                }
+                if (User.IsInRole("User") )
+                {
+                    return RedirectToAction("UserDashboard", "Login");
+                }
+            }
+          
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model)
         {
-            if (ModelState.IsValid)
-            {
-                //login
-                var result = await _signInManager.PasswordSignInAsync(model.Username!, model.Password!, model.RememberMe, false);
-
-                if (result.Succeeded)
+           
+                if (ModelState.IsValid)
                 {
-                    if (User.IsInRole("Admin"))
-                    {
-                        return RedirectToAction("AdminDashboard", "Login");
-                    }
-                    if (User.IsInRole("User"))
-                    {
-                        return RedirectToAction("UserDashboard", "Login");
-                    }
-                }
+                bool checkActive = _userManager.Users.First(x => x.UserEmail == model.UserEmail).isActive;
+                if (checkActive)
+                {
+                    //login
+                    var result = await _signInManager.PasswordSignInAsync(model.UserEmail!, model.Password!, model.RememberMe, false);
 
-                ModelState.AddModelError("", "Invalid login attempt");
-                return View(model);
+                    if (result.Succeeded)
+                    {
+                        if (User.IsInRole("Admin"))
+                        {
+                            return RedirectToAction("AdminDashboard", "Login");
+                        }
+                        if (User.IsInRole("User"))
+                        {
+                            return RedirectToAction("UserDashboard", "Login");
+                        }
+                    }
+
+                    ModelState.AddModelError("", "Invalid login attempt");
+                    return View(model);
+                }
             }
             return View(model);
         }
@@ -61,13 +75,14 @@ namespace SuccessiveCart.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(UserViewModel model)
+        public async Task<IActionResult> Register(SignUpViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var user = new Users
                 {
                     Name= model.Name,
+                    UserName=model.UserEmail,
                    
                     UserEmail = model.UserEmail,
                     
@@ -75,6 +90,8 @@ namespace SuccessiveCart.Controllers
                    
                     UserPassword = model.UserPassword,
                     ConfirmPassword = model.ConfirmPassword,
+                    UserRole="User",
+                    
 
                 };
 
@@ -84,8 +101,11 @@ namespace SuccessiveCart.Controllers
                 {
                     if (_signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                     {
-                        return RedirectToAction("GetAllUser", "Authentication");
+                        await _userManager.AddToRoleAsync(user, Roles.User.ToString());
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("UsersList", "Admin");
                     }
+
                     await _userManager.AddToRoleAsync(user, Roles.User.ToString());
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("UserDashboard", "Login");
@@ -106,9 +126,11 @@ namespace SuccessiveCart.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            Response.Headers["Cache-Control"] = "no-cache, no-store";
+           
 
             return RedirectToAction("Login");
         }
+
+
     }
 }

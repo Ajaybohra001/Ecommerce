@@ -22,5 +22,7 @@ namespace SuccessiveCart.Models.Dto
         [DataType(DataType.Password)]
         [Compare("UserPassword", ErrorMessage = "Password is not Matched")]
         public string ConfirmPassword { get; set; }
+
+        public bool isActive { get; set; }
     }
 }

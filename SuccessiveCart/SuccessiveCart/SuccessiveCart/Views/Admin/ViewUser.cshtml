@@ -3,6 +3,11 @@
 }
 <h1> Edit User</h1>
 <form method="post" action="ViewUser" >
+    <div class="mb-3">
+        <label for="" class="form-label">Role</label>
+        <input type="text" class="form-control" asp-for="UserRole" readonly>
+
+    </div>
     
     <div class="mb-3">
         <label for="" class="form-label">Name</label>
@@ -24,14 +29,19 @@
         <input type="text" class="form-control" asp-for="UserPassword">
 
     </div>
-    <div class="mb-3">
-        <label for="" class="form-label">Role</label>
-        <input type="text" class="form-control" asp-for="UserRole" readonly>
-
+   
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="true" id="ActiveCheckbox" name="IsActive" asp-for="isActive">
+        <label class="form-check-label" for="ActiveCheckbox">
+            Active
+        </label>
     </div>
 
 
     <button type="submit" class="btn btn-primary" asp-action="ViewUser" asp-controller="Admin">Submit</button>
+    
+   
+    <input type="hidden" class="form-control" asp-for="Id" readonly>
 
-    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Admin">Delete</button>
-</form>
+     <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Admin" >Delete</button>
+ </form>

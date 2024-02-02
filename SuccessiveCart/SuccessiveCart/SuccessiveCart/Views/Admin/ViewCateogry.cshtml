@@ -1,5 +1,11 @@
 ﻿@model SuccessiveCart.Models.Domain.Cateogry
 
+@{
+    var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+
 <h1> Edit Cateogry</h1>
 <form method="post" action="ViewCateogry" enctype="multipart/form-data">
     <div class="mb-3">
@@ -21,7 +27,7 @@
     
 
 
-    <button type="submit" class="btn btn-primary" asp-action="ViewCateogry" asp-controller="Admin">Submit</button>
+    <button type="submit" class="btn btn-primary" asp-action="ViewCateogry" asp-controller="Admin">Update</button>
 
-    <button type="submit" class="btn btn-danger" asp-action="DeleteCateogry" asp-controller="Admin">Delete</button>
+    <button type="submit" class="btn btn-danger" asp-action="DeleteCateogry" asp-controller="Admin" >Delete</button>
 </form>

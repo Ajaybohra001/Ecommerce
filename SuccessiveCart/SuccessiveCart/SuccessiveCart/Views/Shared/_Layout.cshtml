@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using SuccessiveCart.Models.Domain
+@inject SignInManager<Users> sign
+@{
+    var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,25 +16,121 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SuccessiveCart.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"/>
+
+      <style>
+        .bgaqua {
+            background: #4549df;
+        }
+
+        .bglightblue {
+            background: #fbfbfb;
+        }
+
+        .fullwidth {
+            max-width: 100%;
+        }
+
+        .bggrey {
+            background-color: #f2ebeb;
+        }
+
+        .ofxh {
+            overflow-y: hidden;
+        }
+
+        </style >
+       
 </head>
 <body>
-    <header>
-      @*   <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SuccessiveCart</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                @if (IsCurrentPage("Admin"))
-                {
-                    <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="AdminDashboard">Dashboard</a>
-                    
+    @if(sign.IsSignedIn(User))
+    {
+        @if(User.IsInRole("Admin"))
+        {
+            
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100">
+                    <div class="container-fluid">
+                    <a class="navbar-brand text-white" asp-action="AdminDashboard" asp-controller="Login">Admin Dashboard</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" id="usersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Manage Users
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="usersDropdown">
+                                        <li><a class="dropdown-item" asp-action="UsersList" asp-controller="Admin">All Users</a></li>
+                                        <li><a class="dropdown-item" asp-action="Register" asp-controller="Verification">Add New User</a></li>
+                                    </ul>
+                                </li>
+
+                               
+
+
+
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-action="CateogryList" asp-controller="Admin">Manage Categories</a>
+                            </li>
+
+
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="usersDropdown">
+                                    @if (CategoryList != null && CategoryList.Count > 0)
+                                    {
+                                        foreach (var x in CategoryList)
+                                        {
+                                            <li>
+
+                                                <a class="dropdown-item" onclick="selectCategory('@x.CateogryId', '@x.CateogryName')">@x.CateogryName</a>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </li>
+
+
+                            </ul>
+                            <ul class="navbar-nav mt-md-4 mt-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="fs-4"> Hello </span><span class="fst-italic fw-bold fs-4">@User.Identity!.Name</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item" asp-action="Logout" asp-controller="Verification">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+  
+
+               
+
+                @section Scripts {
+            <script src="~/js/product.js"></script>
                 }
-            </div>
-        </nav> *@
-    </header>
+                
+        }
+    }
+
+    
+
+
+   
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -55,6 +159,7 @@
 
             return string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
         }
+    
     }
 </body>
 </html>

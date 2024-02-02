@@ -21,7 +21,7 @@
                         <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
 
                         <div class="form-outline mb-4">
-                            <input type="email" id="form2Example18" class="form-control form-control-lg " asp-for="Username" />
+                            <input type="email" id="form2Example18" class="form-control form-control-lg " asp-for="UserEmail" />
                             <label class="form-label" for="form2Example18">Username</label>
                         </div>
 
@@ -29,12 +29,14 @@
                             <input type="password" id="form2Example28" class="form-control form-control-lg" asp-for="Password" />
                             <label class="form-label" for="form2Example28">Password</label>
                         </div>
+                        
                         <div class=" form-check">
                             <label class="form-check-label">
                                 <input asp-for="RememberMe" class="form-check-input" checked /> @Html.DisplayNameFor(a => a.RememberMe);
                             </label>
 
                         </div>
+                     
 
                         <div class="pt-1 mb-4">
                             <input type="submit" class="btn btn-dark" />

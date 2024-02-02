@@ -18,7 +18,7 @@ function loadDataTable() {
             {
                 data: 'productCreatedDate', "width": "15%", render: function (data, type, row) {
                     // Format the date using Moment.js
-                    return moment(data).format('YYYY-MM-DD HH:mm:ss');
+                    return moment(data).format('DD-MM-YYYY HH:mm:ss');
                 }
             },
 
@@ -33,6 +33,7 @@ function loadDataTable() {
                 "render": function (data) {
                     return `<div class="w-75 btn-group" role="group">
                      <a href="/Admin/ViewProduct/${data}" class="btn btn-primary mx-2"> <i class="bi bi-pencil-square "></i> Edit</a>   
+
                      
 
                     
@@ -40,7 +41,8 @@ function loadDataTable() {
                 },
                 "width": "25%"
             }
-        ]
+        ],
+        "order" : [[4 , 'desc']]
     });
 
     $('#IsAvailableButton').on('click', function () {
@@ -80,14 +82,35 @@ function loadDataTable() {
     $('#IsTrendingButton').on('click', function () {
         $(this).toggleClass('active');
     });
+  
 
+
+}
+function selectCategory(categoryId, categoryName) {
+    // Update the dropdown button text to show the selected category
+    $('#categoryDropdown').text(categoryName);
+
+    // Make AJAX call to fetch data based on selected category
+    $.ajax({
+        url: '/Admin/GetDataByCategory', // Adjust the URL if needed
+        type: 'POST',
+        data: { categoryId: categoryId },
+        success: function (data) {
+            // Handle success, update DataTable with new data
+            dataTable.clear().rows.add(data).draw();
+        },
+        error: function (xhr, textStatus, errorThrown) {
+            // Handle error
+            console.error('Error:', errorThrown);
+        }
+    });
 }
 function editProduct(productId) {
     // Redirect to the edit page with the product ID
     window.location.href = `/admin/ViewProduct/?id=${productId}`
 }
 
-function Delete(url) {
+function Delete(productId) {
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -99,7 +122,7 @@ function Delete(url) {
     }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({
-                url: url,
+                url: '/Admin/DeleteProduct/${productId}',
                 type: 'DELETE',
                 success: function (data) {
                     dataTable.ajax.reload();

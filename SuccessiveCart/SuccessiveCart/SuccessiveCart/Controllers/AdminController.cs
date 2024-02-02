@@ -71,7 +71,6 @@ namespace SuccessiveCart.Controllers
             };
             await _dbContext.Products.AddAsync(newProduct);
             await _dbContext.SaveChangesAsync();
-            TempData["success"] = "Product created successfully";
             return RedirectToAction("AdminDashboard" , "Login");
         
         }
@@ -133,66 +132,37 @@ namespace SuccessiveCart.Controllers
 
             }
             await _dbContext.SaveChangesAsync();
-            TempData["success"] = "Product Updated successfully";
+            
 
             return RedirectToAction("AdminDashboard","Login");
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteProduct(Products model)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
-            var product = await _dbContext.Products.FindAsync(model.ProductId);
+            var product = await _dbContext.Products.FindAsync(id);
 
             if (product != null)
             {
                 _dbContext.Products.Remove(product);
                 await _dbContext.SaveChangesAsync();
-                TempData["success"] = "Product Deleted successfully";
+               
 
-                return RedirectToAction("Products");
+                return RedirectToAction("AdminDashboard","Login");
             }
-            return RedirectToAction("Products");
+            return RedirectToAction("AdminDashboard", "Login");
 
         }
 
 
         public async  Task<IActionResult> UsersList() 
-        { var users=await _dbContext.Users.ToListAsync();
+        { 
+            var users=await _dbContext.Users.ToListAsync();
            
             return View(users);
         
         }
-        [HttpGet]
-        public IActionResult AddUser()
-        
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult AddUser(UserViewModel model)
-        {
-            if (model.UserPassword != model.ConfirmPassword)
-            {
-                ModelState.AddModelError(string.Empty, "Password and Confirm Password must match.");
-                return View(model); 
-            }
-            var user = new Users()
-            {
-               
-                Name = model.Name,
-                UserEmail = model.UserEmail,
-                UserPassword = model.UserPassword,
-                ConfirmPassword=model.ConfirmPassword,
-                UserPhoneNo = model.UserPhoneNo,
-                UserRole="User",
-               
-            };
-            
-
-            _dbContext.Users.Add(user);
-            _dbContext.SaveChanges();
-            return RedirectToAction("UsersList");
-        }
+       
 
         [HttpGet]
         public async Task<IActionResult> ViewUser(string id)
@@ -206,8 +176,8 @@ namespace SuccessiveCart.Controllers
                    UserEmail= user.UserEmail,
                    UserPassword= user.UserPassword,
                    UserPhoneNo= user.UserPhoneNo,
-                   UserRole= user.UserRole
-
+                   UserRole= user.UserRole,
+                   isActive = user.isActive
 
 
                 };
@@ -234,9 +204,9 @@ namespace SuccessiveCart.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(Users model)
+        public async Task<IActionResult> Delete(UserViewModel model)
         {
-            var user = await _dbContext.Users.FindAsync(model.UserID);
+            var user = await _dbContext.Users.FindAsync(model.Id.ToString());
 
             if (user!= null)
             {
@@ -337,12 +307,7 @@ namespace SuccessiveCart.Controllers
 
         }
 
-        //[HttpPost]
-        //public IActionResult GetDataByCategory(int categoryId)
-        //{
-        //    var products = _dbContext.Products.Where(p => p.CateogryId == categoryId).ToList();
-        //    return Json(products);
-        //}
+        
 
         [HttpPost]
         public IActionResult GetDataByCategory(int categoryId)
@@ -358,7 +323,7 @@ namespace SuccessiveCart.Controllers
                         product.ProductId,
                         product.ProductName,
                         product.ProductPrice,
-                        CategoryName = category.CateogryName, // Fetch category name from Categories table
+                        cateogryName = category.CateogryName, 
                         product.ProductCreatedDate,
                         product.IsAvailable,
                         product.IsTrending
@@ -372,7 +337,7 @@ namespace SuccessiveCart.Controllers
 
 
 
-        #region API CALLS
+       
         [HttpGet]
         public async Task< IActionResult> GetAll()
         {
@@ -400,7 +365,7 @@ namespace SuccessiveCart.Controllers
             return Json(new { data = categoryProduct });
         }
 
-        #endregion
+       
 
 
 
