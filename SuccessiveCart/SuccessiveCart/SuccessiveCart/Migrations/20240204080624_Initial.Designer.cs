@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SuccessiveCart.Data;
 
@@ -11,9 +12,11 @@ using SuccessiveCart.Data;
 namespace SuccessiveCart.Migrations
 {
     [DbContext(typeof(SuccessiveCartDbContext))]
-    partial class SuccessiveCartDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240204080624_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -167,13 +170,14 @@ namespace SuccessiveCart.Migrations
                     b.Property<int>("ProductQuantity")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProductsProductId")
+                    b.Property<int>("ProductsProductId")
                         .HasColumnType("int");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UsersId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CartId");
@@ -217,9 +221,6 @@ namespace SuccessiveCart.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsFavourite")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsTrending")
@@ -397,11 +398,15 @@ namespace SuccessiveCart.Migrations
                 {
                     b.HasOne("SuccessiveCart.Models.Domain.Products", "Products")
                         .WithMany()
-                        .HasForeignKey("ProductsProductId");
+                        .HasForeignKey("ProductsProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SuccessiveCart.Models.Domain.Users", "Users")
                         .WithMany()
-                        .HasForeignKey("UsersId");
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Products");
 

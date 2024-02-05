@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Constant;
+using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Models.Dto;
 
@@ -11,12 +13,14 @@ namespace SuccessiveCart.Controllers
         private readonly SignInManager<Users> _signInManager;
         private readonly UserManager<Users> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly SuccessiveCartDbContext _dbContext;
 
-        public Verification(SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
+        public Verification(SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager,SuccessiveCartDbContext dbContext)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _roleManager = roleManager;
+            _dbContext= dbContext;
         }
 
         [HttpGet]
@@ -41,14 +45,13 @@ namespace SuccessiveCart.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model)
         {
-           
                 if (ModelState.IsValid)
                 {
-                bool checkActive = _userManager.Users.First(x => x.UserEmail == model.UserEmail).isActive;
+                bool checkActive = _userManager.Users.FirstOrDefault(c=>c.UserName==model.UserName).isActive;
                 if (checkActive)
                 {
                     //login
-                    var result = await _signInManager.PasswordSignInAsync(model.UserEmail!, model.Password!, model.RememberMe, false);
+                    var result = await _signInManager.PasswordSignInAsync(model.UserName!, model.Password!, model.RememberMe, false);
 
                     if (result.Succeeded)
                     {
@@ -63,6 +66,11 @@ namespace SuccessiveCart.Controllers
                     }
 
                     ModelState.AddModelError("", "Invalid login attempt");
+                    return View(model);
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Your account is not active.");
                     return View(model);
                 }
             }
@@ -81,6 +89,7 @@ namespace SuccessiveCart.Controllers
             {
                 var user = new Users
                 {
+                    
                     Name= model.Name,
                     UserName=model.UserEmail,
                    
@@ -91,6 +100,7 @@ namespace SuccessiveCart.Controllers
                     UserPassword = model.UserPassword,
                     ConfirmPassword = model.ConfirmPassword,
                     UserRole="User",
+                    isActive=true
                     
 
                 };
@@ -99,12 +109,7 @@ namespace SuccessiveCart.Controllers
 
                 if (result.Succeeded)
                 {
-                    if (_signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
-                    {
-                        await _userManager.AddToRoleAsync(user, Roles.User.ToString());
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return RedirectToAction("UsersList", "Admin");
-                    }
+                   
 
                     await _userManager.AddToRoleAsync(user, Roles.User.ToString());
                     await _signInManager.SignInAsync(user, isPersistent: false);
@@ -129,6 +134,19 @@ namespace SuccessiveCart.Controllers
            
 
             return RedirectToAction("Login");
+        }
+
+        [HttpGet]
+
+        public async Task<IActionResult> GetAllUsers()
+        {
+
+           
+                var users = await _dbContext.Users.ToListAsync();
+
+                return View(users);
+
+           
         }
 
 

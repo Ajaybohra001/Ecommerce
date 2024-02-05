@@ -18,11 +18,16 @@ namespace SuccessiveCart.Models.Domain
         
         public bool IsTrending { get; set; }
 
+        public bool IsFavourite { get; set; }
+
+
         public DateTime ProductCreatedDate { get; set; }
 
         public int CateogryId { get; set; }
         [ForeignKey("CateogryId")]
         public Cateogry Cateogries { get; set; }
+
+        
       
       
        

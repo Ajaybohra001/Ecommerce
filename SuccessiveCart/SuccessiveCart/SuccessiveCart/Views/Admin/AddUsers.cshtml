@@ -2,24 +2,23 @@
 
 @{
     var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
-    ViewData["Title"] = "Add User";
+    ViewData["Title"] = "Admin Dashboard";
 }
 
 
 
-<form method="post" action="AddUser" class="mt-5">
+<form method="post" action="AddUser" class="mt-5" asp-action="AddUser" asp-controller="Admin">
     <div class="mb-3">
         <label for="Name" class="form-label">User Name</label>
         <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter user name" asp-for="Name">
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-
     <div class="mb-3">
         <label for="userPhone" class="form-label">Phone Number</label>
         <input type="tel" class="form-control" id="userPhone" name="UserPhoneNo" placeholder="Enter phone number" asp-for="UserPhoneNo">
         <span asp-validation-for="UserPhoneNo" class="text-danger"></span>
     </div>
-    
+
 
 
     <div class="mb-3">
@@ -43,7 +42,7 @@
 
     
 
-   
+
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

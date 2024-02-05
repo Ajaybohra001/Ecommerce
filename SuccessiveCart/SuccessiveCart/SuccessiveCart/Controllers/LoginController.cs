@@ -27,7 +27,11 @@ namespace SuccessiveCart.Controllers
         [HttpGet]
         public IActionResult UserDashboard()
         {
-            return View();
+            ViewBag.ProductList = _cartContext.Products.ToList();
+            ViewBag.CategoryList = _cartContext.Cateogries.ToList();
+
+            var prod = _cartContext.Products.ToList();
+            return View(prod);
         
         }
 

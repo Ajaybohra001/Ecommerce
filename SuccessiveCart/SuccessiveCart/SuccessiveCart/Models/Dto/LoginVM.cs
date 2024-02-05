@@ -1,12 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using SuccessiveCart.Models.Domain;
+using System.ComponentModel.DataAnnotations;
 
 namespace SuccessiveCart.Models.Dto
 {
+
     public class LoginVM
     {
+
         [Required(ErrorMessage = "Username is required.")]
 
-        public string? UserEmail { get; set; }
+        public string? UserName { get; set; }
 
         [Required(ErrorMessage = "Password is required.")]
         [DataType(DataType.Password)]
@@ -16,6 +20,8 @@ namespace SuccessiveCart.Models.Dto
         [Display(Name = "Remember Me")]
         public bool RememberMe { get; set; }
 
-        public bool isActive { get; set; }
+
+
+        
     }
 }

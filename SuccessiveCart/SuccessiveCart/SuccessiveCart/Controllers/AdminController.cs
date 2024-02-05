@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SuccessiveCart.Constant;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Models.Dto;
@@ -13,11 +15,18 @@ namespace SuccessiveCart.Controllers
         private readonly SuccessiveCartDbContext _dbContext;
         private readonly IWebHostEnvironment WebHostEnvironment;
 
-        public AdminController(SuccessiveCartDbContext dbContext,IWebHostEnvironment webHostEnvironment )
+        private readonly SignInManager<Users> _signInManager;
+        private readonly UserManager<Users> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        public AdminController(SuccessiveCartDbContext dbContext,IWebHostEnvironment webHostEnvironment, SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
         {
             _dbContext = dbContext;
             this.WebHostEnvironment= webHostEnvironment;
             _dbContext.Products.Include(u=>u.Cateogries);
+            _signInManager= signInManager;
+            _userManager= userManager;
+            _roleManager= roleManager;
             
         }
        
@@ -162,7 +171,51 @@ namespace SuccessiveCart.Controllers
             return View(users);
         
         }
-       
+
+        public IActionResult AddUser()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddUser(SignUpViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new Users
+                {
+                    Name = model.Name,
+                    UserName = model.UserEmail,
+
+                    UserEmail = model.UserEmail,
+
+                    UserPhoneNo = model.UserPhoneNo,
+
+                    UserPassword = model.UserPassword,
+                    ConfirmPassword = model.ConfirmPassword,
+                    UserRole = "User",
+                    isActive=true
+                };
+
+                var result = await _userManager.CreateAsync(user, model.UserPassword!);
+
+                if (result.Succeeded)
+                {
+                    
+                        await _userManager.AddToRoleAsync(user, Roles.User.ToString());
+                    return  RedirectToAction("UsersList");
+                    
+
+                  
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+            return View(model);
+        }
+
 
         [HttpGet]
         public async Task<IActionResult> ViewUser(string id)
@@ -196,6 +249,7 @@ namespace SuccessiveCart.Controllers
                 user.UserPassword=model.UserPassword;
                 user.UserPhoneNo= model.UserPhoneNo;
                 user.UserRole= model.UserRole;
+                user.isActive=model.isActive;
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("UsersList");
             

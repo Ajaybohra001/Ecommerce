@@ -12,13 +12,13 @@ namespace SuccessiveCart.Models.Dto
         public string UserPhoneNo { get; set; }
         public string UserRole { get; set; } = "User";
 
-        [Required]
-        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email address is required")]
+        [EmailAddress(ErrorMessage = "Invalid email address")]
         public string UserEmail { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
         public string UserPassword { get; set; }
-        [Required]
+        [Required (ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
         [Compare("UserPassword", ErrorMessage = "Password is not Matched")]
         public string ConfirmPassword { get; set; }

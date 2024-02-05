@@ -7,15 +7,15 @@ namespace SuccessiveCart.Models.Domain
     {
         [Key]
         [Required]
-        public int CartId { get; set; }
+        public Guid CartId { get; set; }
         [Required]
         public int ProductId {  get; set; }
         public int ProductQuantity {  get; set; }
 
-        public Products Products { get; set; }
+        public virtual Products? Products { get; set; }
        
-        public int UserId {  get; set; }
-        public  Users Users { get; set; }
+        public Guid UserId {  get; set; }
+        public virtual  Users? Users { get; set; }
       
        
 

@@ -15,6 +15,9 @@
             <th scope="col">Role</th>
             <th scope="col">Email</th>
             <th scope="col">Password</th>
+            <th scope="col">IsActive</th>
+
+            
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -31,6 +34,8 @@
                 <td>@user.UserRole</td>
                 <td>@user.UserEmail</td>
                 <td>@user.UserPassword</td>
+               
+                <td>@user.isActive</td>
                 <td>
                     <a href="ViewUser/@user.Id" class="btn btn-sm btn-primary">View</a>
                    

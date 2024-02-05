@@ -48,7 +48,7 @@ namespace SuccessiveCart
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Verification}/{action=Login}/{id?}");
             using (var scope = app.Services.CreateScope())
             {
                 await DbSeeder.SeedRolesAndAdminAsync(scope.ServiceProvider);
