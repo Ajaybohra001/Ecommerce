@@ -50,7 +50,7 @@ namespace SuccessiveCart.Controllers
                         ProductId = cartItem.ProductId,
                         ProductQuantity = cartItem.ProductQuantity,
                         ProductName = product.ProductName,
-                        ProductPrice = product.ProductPrice,
+                        ProductPrice = product.ProductPrice*cartItem.ProductQuantity,
                         ProductPhoto = product.ProductPhoto,
                         ProductDescription = product.ProductDescription,
                         IsAvailable = product.IsAvailable,
@@ -120,42 +120,29 @@ namespace SuccessiveCart.Controllers
 
         }
 
-
         [HttpPost]
-        public async Task<IActionResult> AddToFavourite(int id)
+        public IActionResult RemoveProductCart([FromRoute]Guid id)
         {
-
-
-            var product = _context.Products.Find(id);
-
-            if (product == null)
+            if(id!=null)
             {
 
-                return NotFound();
-            }
+                var product = _context.CartItems.Find(id);
 
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == User.Identity.Name);
-
-            if (user == null)
-            {
-                return NotFound("User not found.");
-            }
-
-           
-
-            
-               product.IsFavourite=!product.IsFavourite;
-
-
+                if(product != null)
+                {
+                    _context.CartItems.Remove(product);
+                }
                 
-            
-           await  _context.SaveChangesAsync();
 
-
-            return RedirectToAction("UserDashboard","Login");
+            }
+            _context.SaveChanges();
+            return RedirectToAction("MyCart");
 
 
         }
+
+
+
 
     }
 }

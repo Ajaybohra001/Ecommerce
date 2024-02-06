@@ -92,8 +92,13 @@
                         <p class="product-quantity">Quantity X @product.ProductQuantity</p>
 
                         <div class="product-actions">
-                           
 
+                            <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
+                                <button class="btn btn-primary favorite-btn">❤️</button>
+                            </form>
+                            <form asp-controller="Cart" asp-action="RemoveProductCart" asp-route-id="@product.CartId" method="post">
+                                <button type="submit" class="btn btn-success">Remove</button>
+                            </form>
 
                         </div>
                     </div>
@@ -109,6 +114,12 @@
                         <p class="product-quantity">Quantity X @product.ProductQuantity</p>
 
                         <div class="product-actions">
+                            <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
+                                <button class="btn btn-primary favorite-btn">❤️</button>
+                            </form>
+                            <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
+                                <button type="submit" class="btn btn-success">Remove</button>
+                            </form>
                         </div>
                     </div>
                 </div>

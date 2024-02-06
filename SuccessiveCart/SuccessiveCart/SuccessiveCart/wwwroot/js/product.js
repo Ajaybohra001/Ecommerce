@@ -2,6 +2,24 @@ var dataTable;
 
 $(document).ready(function () {
     loadDataTable();
+
+    $('#categoryDropdown').on('change', function () {
+        var selectCategory = $(this).val;
+        alert(selectCategory)
+
+        $.ajax({
+            url: '/Home/Privacy',
+            type: 'POST',
+            data: { myData: selectedCategory },
+            success: function (data) {
+                sessionStorage.setItem('TheCategory', selectedCategory)
+                console.log(data.success)
+            },
+            error: function () {
+                alert("error");
+            }
+        });
+    })
 });
 
 function loadDataTable() {
@@ -10,10 +28,12 @@ function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": { url: '/Admin/GetAll' },
         "columns": [
+           
             { data: 'productId', "width": "25%" },
             { data: 'productName', "width": "15%" },
             { data: 'productPrice', "width": "10%" },
             { data: 'cateogryName', "width": "15%" },
+            
            
             {
                 data: 'productCreatedDate', "width": "15%", render: function (data, type, row) {
@@ -103,8 +123,15 @@ function selectCategory(categoryId, categoryName) {
             // Handle error
             console.error('Error:', errorThrown);
         }
+
     });
+
+    
+
+    
 }
+
+
 function editProduct(productId) {
     // Redirect to the edit page with the product ID
     window.location.href = `/admin/ViewProduct/?id=${productId}`

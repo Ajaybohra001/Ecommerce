@@ -205,6 +205,35 @@ namespace SuccessiveCart.Migrations
                     b.ToTable("Cateogries");
                 });
 
+            modelBuilder.Entity("SuccessiveCart.Models.Domain.FavoriteModel", b =>
+                {
+                    b.Property<Guid>("FavId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductsProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UsersId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("FavId");
+
+                    b.HasIndex("ProductsProductId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("favorites");
+                });
+
             modelBuilder.Entity("SuccessiveCart.Models.Domain.Products", b =>
                 {
                     b.Property<int>("ProductId")
@@ -402,6 +431,25 @@ namespace SuccessiveCart.Migrations
                     b.HasOne("SuccessiveCart.Models.Domain.Users", "Users")
                         .WithMany()
                         .HasForeignKey("UsersId");
+
+                    b.Navigation("Products");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("SuccessiveCart.Models.Domain.FavoriteModel", b =>
+                {
+                    b.HasOne("SuccessiveCart.Models.Domain.Products", "Products")
+                        .WithMany()
+                        .HasForeignKey("ProductsProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SuccessiveCart.Models.Domain.Users", "Users")
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Products");
 

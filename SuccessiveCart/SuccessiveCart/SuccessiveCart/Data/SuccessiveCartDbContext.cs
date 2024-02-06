@@ -20,6 +20,8 @@ namespace SuccessiveCart.Data
         public DbSet<Cateogry> Cateogries { get;set; }
         public DbSet<CartItem> CartItems { get; set; }
 
+        public DbSet<FavoriteModel> favorites { get; set; }
+
      
 
 

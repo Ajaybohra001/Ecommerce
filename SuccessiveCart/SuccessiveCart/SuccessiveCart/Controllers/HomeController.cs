@@ -17,8 +17,8 @@ namespace SuccessiveCart.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Privacy(string myData)
         {
             return View();
         }

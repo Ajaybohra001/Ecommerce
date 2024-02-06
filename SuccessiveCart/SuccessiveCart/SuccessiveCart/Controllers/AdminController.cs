@@ -238,21 +238,40 @@ namespace SuccessiveCart.Controllers
             }
             return RedirectToAction("UsersList");
         }
+       
         [HttpPost]
         public async Task<IActionResult> ViewUser(UserViewModel model)
         {
-            var user = await _dbContext.Users.FindAsync(model.Id);
-            if(user!=null) 
+            var user = await _userManager.FindByIdAsync(model.Id);
+            if (user != null)
             {
-                user.Name=model.Name;
-                user.UserEmail= model.UserEmail;
-                user.UserPassword=model.UserPassword;
-                user.UserPhoneNo= model.UserPhoneNo;
-                user.UserRole= model.UserRole;
-                user.isActive=model.isActive;
+                user.Name = model.Name;
+                user.UserEmail = model.UserEmail;
+                user.UserPhoneNo = model.UserPhoneNo;
+                user.UserRole = model.UserRole;
+                user.isActive = model.isActive;
+                
+
+                
+                if (!string.IsNullOrEmpty(model.UserPassword))
+                {
+                    
+                    var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+                    var resetPasswordResult = await _userManager.ResetPasswordAsync(user, token, model.UserPassword);
+
+                    if (!resetPasswordResult.Succeeded)
+                    {
+                        ModelState.AddModelError("", "Failed to reset the password.");
+                        return View(model);
+                    }
+                    user.UserPassword = model.UserPassword;
+                    user.ConfirmPassword=model.UserPassword;
+                }
+                
+
                 await _dbContext.SaveChangesAsync();
                 return RedirectToAction("UsersList");
-            
             }
             return RedirectToAction("UsersList");
         }

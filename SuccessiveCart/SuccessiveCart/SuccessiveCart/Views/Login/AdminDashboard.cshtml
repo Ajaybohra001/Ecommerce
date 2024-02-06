@@ -74,68 +74,6 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-   @* <nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white"  >Admin Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" id="usersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Manage Users
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="usersDropdown">
-                            <li><a class="dropdown-item" asp-action="UsersList" asp-controller="Admin">All Users</a></li>
-                            <li><a class="dropdown-item" asp-action="Register" asp-controller="Verification">Add New User</a></li>
-                        </ul>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link text-white" asp-action="CateogryList" asp-controller="Admin">Manage Categories</a>
-                    </li>
-                    
-                   
-                    
-                    
-                    
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="usersDropdown">
-                            @if (CategoryList != null && CategoryList.Count > 0)
-                            {
-                                foreach (var x in CategoryList)
-                                {
-                                    <li>
-                                       
-                                        <a class="dropdown-item"   onclick="selectCategory('@x.CateogryId', '@x.CateogryName')">@x.CateogryName</a>
-                                    </li>
-                                }
-                            }
-                        </ul>
-                    </li>
-
-                    
-                </ul>
-                <ul class="navbar-nav mt-md-4 mt-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fs-4"> Hello </span><span class="fst-italic fw-bold fs-4">@User.Identity!.Name</span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          
-                            <li><a class="dropdown-item" asp-action="Logout" asp-controller="Verification">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-*@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center mt-3">
@@ -147,6 +85,9 @@
 
  <button type="button" class="btn btn btn-warning ms-2" id="IsTrendingButton">Trending Products</button>
                 <span class="text-danger"></span>
+
+   
+
             </div>
         </div>
     </div>
@@ -160,10 +101,13 @@
                             <table class="table table-bordered" id="tblData">
                                 <thead>
                                     <tr>
+
+
                                         <th scope="col">Id</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Price</th>
                                         <th scope="col">Category Name</th>
+                                        
                                         <th scope="col">Manufacture Date</th>
                                         <th scope="col">Available</th>
                                         <th scope="col">Trending</th>
@@ -192,7 +136,6 @@
                 button.textContent = "All Products";
             }
 
-            // Change button color to red if the text is "Products Checked"
             if (button.textContent === "All Products") {
                 button.classList.remove("btn-custom");
                 button.classList.add("btn-danger-custom");

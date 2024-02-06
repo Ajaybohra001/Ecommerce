@@ -3,7 +3,6 @@
 @inject SignInManager<Users> sign
 @{
     var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
-    ViewData["Title"] = "Admin Dashboard";
 }
 
 <!DOCTYPE html>
@@ -109,18 +108,18 @@
 
 
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown" >
                                 <a class="nav-link dropdown-toggle text-white" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Category
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="usersDropdown">
+                                <ul class="dropdown-menu" aria-labelledby="usersDropdown" >
                                     @if (CategoryList != null && CategoryList.Count > 0)
                                     {
                                         foreach (var x in CategoryList)
                                         {
                                             <li>
 
-                                                <a class="dropdown-item" onclick="selectCategory('@x.CateogryId', '@x.CateogryName')">@x.CateogryName</a>
+                                                <a class="dropdown-item" onclick="selectCategory('@x.CateogryId', '@x.CateogryName')" value="@x.CateogryId">@x.CateogryName</a>
                                             </li>
                                         }
                                     }
@@ -184,7 +183,11 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" asp-action="AllProducts" asp-controller="Cart">All Products</a>
                             </li>
-                            
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-action="FavouriteProducts" asp-controller="Favourite">Favourite Products</a>
+                            </li>
+
+
 
 
                         </ul>

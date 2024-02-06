@@ -1,0 +1,127 @@
+﻿@model List<SuccessiveCart.Models.Dto.FavouriteWithProducts>
+@{
+    ViewData["Title"] = "My Cart";
+}
+<head>
+    <style>
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: calc(25% - 20px); /* Adjust the width to fit four cards per row */
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+            .product-card:hover {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+            }
+
+        .product-image {
+            width: 100%;
+            height: 200px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-details {
+            padding: 15px;
+            text-align: center; /* Center align product name and price */
+        }
+
+        .product-name {
+            font-size: 16px; /* Adjust font size */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 14px; /* Adjust font size */
+            color: crimson;
+            margin-bottom: 10px;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-around; /* Space between buttons */
+            margin-top: 10px; /* Add margin to separate buttons from product details */
+        }
+
+        /* Adjust button styles */
+        .favorite-btn,
+        .add-to-cart-btn {
+            padding: 8px 20px; /* Adjust button padding */
+            border-radius: 5px;
+        }
+
+            .favorite-btn:hover,
+            .add-to-cart-btn:hover {
+                background: #0056b3;
+            }
+
+        .heading-center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading-center">
+        <h1></h1>
+    </div>
+
+    <div class="product-row">
+        @foreach (var product in Model)
+        {
+            if (product.IsTrending)
+            {
+                <div class="product-card">
+                    <img class="product-image" src="/image/@product.ProductPhoto" alt="Product 1">
+                    <div class="product-details">
+                        <h3 class="product-name">@product.ProductName</h3>
+                        <p class="product-price">Rs.@product.ProductPrice</p>
+
+                        <div class="product-actions">
+                            <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
+                                <button class="btn btn-danger favorite-btn">Remove</button>
+                            </form>
+                            <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
+                                <button type="submit" class="btn btn-success">🛒</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="product-card">
+                    <img class="product-image" src="/image/@product.ProductPhoto" alt="Product 1">
+                    <div class="product-details">
+                        <h3 class="product-name">@product.ProductName</h3>
+                        <p class="product-price">Rs.@product.ProductPrice</p>
+                        <div class="product-actions">
+                            <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
+                                <button class="btn btn-danger favorite-btn">Remove</button>
+                            </form>
+                            <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
+                                <button type="submit" class="btn btn-success">🛒</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        }
+    </div>
+</body>
+
+
