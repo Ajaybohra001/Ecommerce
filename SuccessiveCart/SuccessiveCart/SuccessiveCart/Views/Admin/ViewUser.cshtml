@@ -1,6 +1,9 @@
 ﻿@model SuccessiveCart.Models.Domain.Users
 @{
 }
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
 <h1> Edit User</h1>
 <form method="post" action="ViewUser" >
     <div class="mb-3">
@@ -12,11 +15,15 @@
     <div class="mb-3">
         <label for="" class="form-label">Name</label>
         <input type="text" class="form-control" asp-for="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+
 
     </div>
     <div class="mb-3">
         <label for="" class="form-label">Phone Number</label>
         <input type="number" class="form-control" asp-for="UserPhoneNo">
+        <span asp-validation-for="UserPhoneNo" class="text-danger"></span>
+
 
     </div>
     <div class="mb-3">
@@ -44,4 +51,10 @@
     <input type="hidden" class="form-control" asp-for="Id" readonly>
 
      <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Admin" >Delete</button>
+    <span asp-validation-summary="All" class="text-danger"></span>
+
  </form>
+
+
+
+  

@@ -32,6 +32,7 @@ namespace SuccessiveCart.Controllers
                 if (User.IsInRole("Admin"))
                 {
                     return RedirectToAction("AdminDashboard", "Login");
+
                 }
                 if (User.IsInRole("User") )
                 {

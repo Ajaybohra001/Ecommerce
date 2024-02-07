@@ -23,8 +23,4 @@
     <Folder Include="wwwroot\image\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\.DS_Store" />
-  </ItemGroup>
-
 </Project>

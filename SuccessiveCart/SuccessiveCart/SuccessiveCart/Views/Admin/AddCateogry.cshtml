@@ -15,11 +15,15 @@
                         
                         <div class="mb-3">
                             <label for="CateogryName" class="form-label">Category Name</label>
-                            <input type="text" class="form-control" asp-for="CateogryName" id="CateogryName">
+                            <input type="text" class="form-control" asp-for="CateogryName" id="CateogryName" required>
+                            <span asp-validation-for="CateogryName" class="text-danger"></span>
+
                         </div>
                         <div class="mb-3">
                             <label for="CateogryPhoto" class="form-label">Photo</label>
                             <input type="file" class="form-control" asp-for="CateogryPhoto" id="CateogryPhoto">
+                            <span asp-validation-for="CateogryPhoto" class="text-danger"></span>
+
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary btn-block">Submit</button>
@@ -30,3 +34,8 @@
         </div>
     </div>
 </form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

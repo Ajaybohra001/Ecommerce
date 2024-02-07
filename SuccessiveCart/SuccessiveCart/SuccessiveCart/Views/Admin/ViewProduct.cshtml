@@ -41,7 +41,7 @@
     </div>
     <div class="mb-3">
         <label asp-for="ProductPhoto" class="form-label">Product Photo</label>
-        <input type="file" class="form-control" asp-for="ProductPhoto">
+        <input type="file" class="form-control" asp-for="ProductPhoto" id="ChooseImage">
     </div>
     <div class="mb-3">
         <label asp-for="ProductPrice" class="form-label">Product Price</label>
@@ -66,3 +66,20 @@
     <button type="submit" class="btn btn-primary">Update</button>
 
 </form>
+
+        <script>
+    $(document).ready(function () {
+        $('#ChooseImage').change(function (e) {
+            var url = $('#ChooseImage').val()
+            var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase()
+            if (ChooseImage.files && ChooseImage.files[0] && (ext == "gif" || ext == "jpg" || ext == "jfif" || ext == "png" || ext == "bmp")) {
+                var reader = new FileReader()
+                reader.onload = function () {
+                    var output = document.getElementById('PreviewImage');
+                    output.src = reader.result
+                }
+                reader.readAsDataURL(e.target.files[0])
+            }
+        });
+    });
+        </script>

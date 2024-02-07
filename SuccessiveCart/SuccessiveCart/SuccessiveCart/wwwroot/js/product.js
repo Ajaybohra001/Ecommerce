@@ -1,25 +1,7 @@
-var dataTable;
 
 $(document).ready(function () {
+   
     loadDataTable();
-
-    $('#categoryDropdown').on('change', function () {
-        var selectCategory = $(this).val;
-        alert(selectCategory)
-
-        $.ajax({
-            url: '/Home/Privacy',
-            type: 'POST',
-            data: { myData: selectedCategory },
-            success: function (data) {
-                sessionStorage.setItem('TheCategory', selectedCategory)
-                console.log(data.success)
-            },
-            error: function () {
-                alert("error");
-            }
-        });
-    })
 });
 
 function loadDataTable() {
@@ -109,6 +91,9 @@ function loadDataTable() {
 function selectCategory(categoryId, categoryName) {
     // Update the dropdown button text to show the selected category
     $('#categoryDropdown').text(categoryName);
+    var selectedCat = categoryName;
+    
+    
 
     // Make AJAX call to fetch data based on selected category
     $.ajax({
@@ -124,12 +109,14 @@ function selectCategory(categoryId, categoryName) {
             console.error('Error:', errorThrown);
         }
 
+
     });
 
     
 
     
 }
+
 
 
 function editProduct(productId) {

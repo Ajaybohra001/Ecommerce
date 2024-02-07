@@ -4,9 +4,13 @@ using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Data;
 using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Models.Dto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SuccessiveCart.Controllers
 {
+
+
+    [Authorize(Roles ="User")]
     public class Favourite : Controller
     {
         private readonly SuccessiveCartDbContext _context;

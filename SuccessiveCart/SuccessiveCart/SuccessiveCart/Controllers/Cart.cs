@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
@@ -7,6 +9,8 @@ using SuccessiveCart.Models.Dto;
 
 namespace SuccessiveCart.Controllers
 {
+
+    [Authorize(Roles ="User")]
     public class Cart : Controller
 
     {
@@ -121,18 +125,28 @@ namespace SuccessiveCart.Controllers
         }
 
         [HttpPost]
-        public IActionResult RemoveProductCart([FromRoute]Guid id)
+        public IActionResult RemoveProductCart(int id)
         {
             if(id!=null)
             {
 
-                var product = _context.CartItems.Find(id);
+                var product = _context.CartItems.FirstOrDefault(x=>x.ProductId==id);
 
-                if(product != null)
+
+                if (product != null && product.ProductQuantity>1)
+                {
+                    product.ProductQuantity--;
+
+               
+
+
+                   
+                }
+                else if (product.ProductQuantity == 1)
                 {
                     _context.CartItems.Remove(product);
                 }
-                
+
 
             }
             _context.SaveChanges();

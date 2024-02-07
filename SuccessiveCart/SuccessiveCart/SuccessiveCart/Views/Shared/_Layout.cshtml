@@ -39,9 +39,17 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var selectCategoryLinks = document.querySelectorAll(".select-category");
+            selectCategoryLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    var categoryId = this.getAttribute("data-category-id");
+                    document.getElementById("categoryIdInput").value = categoryId;
+                });
+            });
+        });
+    </script>
 
-
-        </script>
 
       <style>
         .bgaqua {
@@ -142,6 +150,7 @@
                         </div>
                     </div>
             </nav>
+           
   
 
                
@@ -152,8 +161,8 @@
                 
         }
     }
-
-     @if(sign.IsSignedIn(User))
+    
+    @if(sign.IsSignedIn(User))
     {
         @if (User.IsInRole("User"))
         {
@@ -211,9 +220,33 @@
             }
             
         }
+
     }
 
+    else
+    {
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" asp-action="" asp-controller="">Successive Cart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mt-md-4 mt-lg-0">
 
+                        <li class="nav-item mt-md-4 mt-lg-0" >
+                            <a class="nav-link text-white" asp-action="Login" asp-controller="Verification">Login</a>
+                        </li>
+
+                     
+
+
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    }
 
    
     <div class="container">
@@ -233,6 +266,11 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script>
+        if (performance.navigation.type == 2) {
+            location.reload();
+        }
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 

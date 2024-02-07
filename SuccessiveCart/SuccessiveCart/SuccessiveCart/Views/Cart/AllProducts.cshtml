@@ -8,7 +8,7 @@
 }
 
 
-<!DOCTYPE html>
+@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -204,5 +204,200 @@
 
     <!-- Add more product cards as needed -->
 
+</body>
+</html>
+ *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom CSS styles for filters and search */
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .filter-section > div {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+            .filter-section select,
+            .filter-section input[type="number"],
+            .filter-section input[type="text"] {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: calc(25% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+            .product-card:hover {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+            }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 14px;
+            color: crimson;
+            margin-bottom: 10px;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        /* Adjust button styles */
+        .favorite-btn,
+        .add-to-cart-btn {
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+
+            .favorite-btn:hover,
+            .add-to-cart-btn:hover {
+                background: #0056b3;
+            }
+
+        .heading-center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="filter-section">
+            <div>
+                <label for="categoryFilter">Category:</label>
+                <select id="categoryFilter" class="form-control" onchange="filterProducts()">
+                    <option value="">All Categories</option>
+                    @foreach (var category in CategoryList)
+                    {
+                        <option value="@category.CateogryId">@category.CateogryName</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" class="form-control" placeholder="Enter keywords" oninput="searchProducts()">
+            </div>
+            <div>
+                <label for="minPrice">Price Range:</label>
+                <input type="number" id="minPrice" class="form-control" placeholder="Min Price" onchange="filterProducts()">
+                <input type="number" id="maxPrice" class="form-control" placeholder="Max Price" onchange="filterProducts()">
+            </div>
+        </div>
+
+        <div class="heading-center">
+            <h1>All Products</h1>
+        </div>
+
+        <div class="product-row">
+            @foreach (var product in Model)
+            {
+                <div class="product-card" data-category="@product.CateogryId" data-price="@product.ProductPrice">
+                    <img class="product-image" src="/image/@product.ProductPhoto" alt="Product 1">
+                    <div class="product-details">
+                        <h3 class="product-name">@product.ProductName</h3>
+                        <p class="product-price">Rs. @product.ProductPrice</p>
+                        <div class="product-actions">
+                            <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
+                                <button class="btn btn-primary favorite-btn">❤️</button>
+                            </form>
+                            <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
+                                <button type="submit" class="btn btn-success">🛒</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Add more product cards as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Your JavaScript functions remain unchanged
+        function filterProducts() {
+            var categoryFilter = document.getElementById("categoryFilter").value;
+            var minPrice = parseFloat(document.getElementById("minPrice").value);
+            var maxPrice = parseFloat(document.getElementById("maxPrice").value);
+
+            $(".product-card").each(function () {
+                var productCategory = $(this).data("category");
+                var productPrice = parseFloat($(this).data("price"));
+
+                var showProduct = (!categoryFilter || productCategory == categoryFilter) &&
+                    (!minPrice || productPrice >= minPrice) &&
+                    (!maxPrice || productPrice <= maxPrice);
+
+                $(this).toggle(showProduct);
+            });
+        }
+
+        function searchProducts() {
+            var searchText = $("#searchInput").val().toLowerCase();
+            var selectedCategory = $("#categoryFilter").val();
+
+            $(".product-card").each(function () {
+                var productName = $(this).find(".product-name").text().toLowerCase();
+                var productCategory = $(this).data("category").toString();
+
+                var matchSearch = productName.includes(searchText);
+                var matchCategory = selectedCategory === "" || productCategory === selectedCategory;
+
+                $(this).toggle(matchSearch && matchCategory);
+            });
+        }
+    </script>
 </body>
 </html>

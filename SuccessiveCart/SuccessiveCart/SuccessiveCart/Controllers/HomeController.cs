@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Models;
+using SuccessiveCart.Data;
 using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace SuccessiveCart.Controllers
 {
@@ -17,8 +20,8 @@ namespace SuccessiveCart.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Privacy(string myData)
+
+        public IActionResult Privacy()
         {
             return View();
         }

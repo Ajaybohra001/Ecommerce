@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
@@ -6,6 +7,8 @@ using SuccessiveCart.Models.Dto;
 
 namespace SuccessiveCart.Controllers
 {
+
+    
     public class LoginController : Controller
     {
        private readonly SuccessiveCartDbContext _cartContext;
@@ -16,6 +19,7 @@ namespace SuccessiveCart.Controllers
             _cartContext = cartContext;
             
         }
+        [Authorize(Roles ="Admin")]
         [HttpGet]
         public IActionResult AdminDashboard()
         {

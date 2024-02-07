@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace SuccessiveCart.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly SuccessiveCartDbContext _dbContext;
@@ -38,15 +40,18 @@ namespace SuccessiveCart.Controllers
             return View(products);
         }
 
-       
 
+
+       
         [HttpGet]
         public IActionResult AddProducts()
         {
-            var cateogryList = _dbContext.Cateogries.ToList();
-            ViewBag.CateogryList = cateogryList;
+            var categoryList = _dbContext.Cateogries.ToList();
+            ViewBag.CateogryList = categoryList;
             return View();
         }
+
+
 
         [HttpPost]
         public async Task<IActionResult> AddProducts(ProductViewModel model)
@@ -80,6 +85,7 @@ namespace SuccessiveCart.Controllers
             };
             await _dbContext.Products.AddAsync(newProduct);
             await _dbContext.SaveChangesAsync();
+            TempData["productsuccess"] = "Product added successfully";
             return RedirectToAction("AdminDashboard" , "Login");
         
         }
@@ -141,7 +147,7 @@ namespace SuccessiveCart.Controllers
 
             }
             await _dbContext.SaveChangesAsync();
-            
+            TempData["productsuccess"] = "Product Updated successfully";
 
             return RedirectToAction("AdminDashboard","Login");
         }
@@ -167,7 +173,11 @@ namespace SuccessiveCart.Controllers
         public async  Task<IActionResult> UsersList() 
         { 
             var users=await _dbContext.Users.ToListAsync();
+                ViewBag.SuccessMessage = TempData["SuccessMessage"];
+
            
+
+
             return View(users);
         
         }
@@ -203,7 +213,9 @@ namespace SuccessiveCart.Controllers
                 {
                     
                         await _userManager.AddToRoleAsync(user, Roles.User.ToString());
-                    return  RedirectToAction("UsersList");
+                    TempData["SuccessMessage"] = "User added successfully!";
+
+                    return RedirectToAction("UsersList");
                     
 
                   
@@ -271,6 +283,7 @@ namespace SuccessiveCart.Controllers
                 
 
                 await _dbContext.SaveChangesAsync();
+
                 return RedirectToAction("UsersList");
             }
             return RedirectToAction("UsersList");
@@ -402,6 +415,8 @@ namespace SuccessiveCart.Controllers
                         product.IsTrending
                     })
                 .ToList();
+
+            TempData["SelectedCategoryId"] = categoryId;
 
             return Json(productsWithCategory);
         }

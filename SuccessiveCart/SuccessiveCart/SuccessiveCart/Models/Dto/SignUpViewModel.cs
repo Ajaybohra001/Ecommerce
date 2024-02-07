@@ -4,24 +4,25 @@ namespace SuccessiveCart.Models.Dto
 {
     public class SignUpViewModel
     {
-        [Required]
-        public string? Name { get; set; }
+        [Required(ErrorMessage = "Name is required")]
 
-        [DataType(DataType.PhoneNumber)]
+        public string? Name { get; set; }
+        [Required(ErrorMessage = "Phone number is required")]
+        [RegularExpression(@"^[0-9]*$", ErrorMessage = "Please enter a valid phone number")]
         public string? UserPhoneNo { get; set; }
 
         public string? UserRole = "User";
-        [Required]
-        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email address is required")]
+        [EmailAddress(ErrorMessage = "Please enter a valid email address")]
         public string? UserEmail { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
         public string UserPassword { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Confirm password is required")]
+        [Compare("UserPassword", ErrorMessage = "Passwords do not match")]
         [DataType(DataType.Password)]
-        [Compare("UserPassword", ErrorMessage = "Password is not Matched")]
         public string ConfirmPassword { get; set; }
 
 
