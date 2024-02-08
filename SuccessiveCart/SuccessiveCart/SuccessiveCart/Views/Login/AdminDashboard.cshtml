@@ -97,7 +97,8 @@
  <button type="button" class="btn btn btn-warning ms-2" id="IsTrendingButton">Trending Products</button>
                 <span class="text-danger"></span>
 
-                @* <div class="dropdown">
+@*                 <button>
+                <div class="dropdown">
                     <select class="form-select" id="categoryDropdown" onchange="selectCategory(this.value)">
                         
                         @if (CategoryList != null && CategoryList.Count > 0)
@@ -108,7 +109,11 @@
                             }
                         }
                     </select>
-                </div> *@
+                </div>
+                </button> *@
+               
+
+                
 
 
             </div>
@@ -132,7 +137,7 @@
                                         <th scope="col">Category Name</th>
                                         
                                         <th scope="col">Manufacture Date</th>
-                                        <th scope="col">Available</th>
+                                        <th scope="col">Active</th>
                                         <th scope="col">Trending</th>
                                         <th scope="col">Action</th>
                                     </tr>

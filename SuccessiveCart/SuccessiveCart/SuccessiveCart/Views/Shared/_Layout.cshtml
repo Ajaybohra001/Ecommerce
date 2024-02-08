@@ -1,8 +1,12 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using SuccessiveCart.Models.Domain
 @inject SignInManager<Users> sign
+@inject UserManager<Users> userManager
+
 @{
     var CategoryList = ViewBag.CategoryList as List<SuccessiveCart.Models.Domain.Cateogry>;
+    var UserList = ViewBag.UserList as List<SuccessiveCart.Models.Domain.Users>;
+
 }
 
 <!DOCTYPE html>
@@ -24,19 +28,158 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <title>SuccessiveCart</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="vendors/linericon/style.css" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/themify-icons.css" />
-        <link rel="stylesheet" href="css/flaticon.css" />
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-        <link rel="stylesheet" href="vendors/animate-css/animate.css" />
-        <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css" />
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css" />
+        <style>
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+            .filter-section > div {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+            .filter-section select,
+            .filter-section input[type="number"],
+            .filter-section input[type="text"] {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: calc(25% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+            .product-card:hover {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+            }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 14px;
+            color: crimson;
+            margin-bottom: 10px;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        /* Adjust button styles */
+        .favorite-btn,
+        .add-to-cart-btn {
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+
+            .favorite-btn:hover,
+            .add-to-cart-btn:hover {
+                background: #0056b3;
+            }
+
+        .heading-center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        function filterProducts() {
+            var categoryFilter = document.getElementById("categoryFilter").value;
+            var minPrice = parseFloat(document.getElementById("minPrice").value);
+            var maxPrice = parseFloat(document.getElementById("maxPrice").value);
+
+            $(".product-card").each(function () {
+                var productCategory = $(this).data("category");
+                var productPrice = parseFloat($(this).data("price"));
+                var isTrending = $(this).hasClass("trending-product");
+
+                var showProduct = ((!categoryFilter || productCategory == categoryFilter) &&
+                    (!minPrice || productPrice >= minPrice) &&
+                    (!maxPrice || productPrice <= maxPrice)) &&
+                    (!isTrending);
+
+                $(this).toggle(showProduct);
+            });
+
+            if (categoryFilter.trim() === "" && isNaN(minPrice) && isNaN(maxPrice)) {
+                $(".trending-products").show();
+            } else {
+                $(".trending-products").hide();
+            }
+        }
+        function searchProducts() {
+            var searchText = $("#searchInput").val().toLowerCase();
+            var selectedCategory = $("#categoryFilter").val();
+
+            $(".product-card").each(function () {
+                var productName = $(this).find(".product-name").text().toLowerCase();
+                var productCategory = $(this).data("category").toString();
+                var isTrending = $(this).hasClass("trending-product");
+
+                var matchSearch = productName.includes(searchText);
+                var matchCategory = selectedCategory === "" || productCategory === selectedCategory;
+
+                var showProduct = matchSearch && matchCategory && (!isTrending);
+
+                $(this).toggle(showProduct);
+            });
+
+            if (searchText.trim() === "") {
+                $(".trending-products").show();
+            } else {
+                $(".trending-products").hide();
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+        
         <link rel="stylesheet" href="css/responsive.css" />
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -79,6 +222,8 @@
 
     @if(sign.IsSignedIn(User))
     {
+        var id = userManager.GetUserId(User);
+
         @if(User.IsInRole("Admin"))
         {
             
@@ -142,6 +287,7 @@
                                         <span class="fs-4"> Hello </span><span class="fst-italic fw-bold fs-4">@User.Identity!.Name</span>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/UserProfile/Index/@id">Profile</a></li>
 
                                         <li><a class="dropdown-item" asp-action="Logout" asp-controller="Verification">Logout</a></li>
                                     </ul>
@@ -164,9 +310,10 @@
     
     @if(sign.IsSignedIn(User))
     {
+        var id = userManager.GetUserId(User);
         @if (User.IsInRole("User"))
         {
-            <nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between bgaqua w-100 mt-0    ">
                 <div class="container-fluid">
                     <a class="navbar-brand text-white" asp-action="" asp-controller="">Successive Cart</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,6 +353,7 @@
                                     <span class="fs-4"> Hello </span><span class="fst-italic fw-bold fs-4">@User.Identity!.Name</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/UserProfile/Index/@id">Profile</a></li>
 
                                     <li><a class="dropdown-item" asp-action="Logout" asp-controller="Verification">Logout</a></li>
                                 </ul>
@@ -237,6 +385,9 @@
                         <li class="nav-item mt-md-4 mt-lg-0" >
                             <a class="nav-link text-white" asp-action="Login" asp-controller="Verification">Login</a>
                         </li>
+                        <li class="nav-item mt-md-4 mt-lg-0">
+                            <a class="nav-link text-white" asp-action="Register" asp-controller="Verification">Register</a>
+                        </li>
 
                      
 
@@ -246,6 +397,11 @@
                 </div>
             </div>
         </nav>
+
+     
+
+
+
     }
 
    

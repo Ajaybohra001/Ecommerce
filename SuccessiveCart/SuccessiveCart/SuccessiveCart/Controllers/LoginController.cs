@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Models.Dto;
@@ -25,7 +26,7 @@ namespace SuccessiveCart.Controllers
         {
             ViewBag.CategoryList = _cartContext.Cateogries.ToList();
             var prod = _cartContext.Products.ToList();
-
+            
             return View(prod);
         }
         [HttpGet]

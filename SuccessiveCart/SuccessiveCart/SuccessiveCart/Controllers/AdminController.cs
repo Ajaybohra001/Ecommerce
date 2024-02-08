@@ -161,7 +161,9 @@ namespace SuccessiveCart.Controllers
             {
                 _dbContext.Products.Remove(product);
                 await _dbContext.SaveChangesAsync();
-               
+                TempData["productsuccess"] = "Product Deleted successfully";
+
+
 
                 return RedirectToAction("AdminDashboard","Login");
             }
@@ -283,6 +285,8 @@ namespace SuccessiveCart.Controllers
                 
 
                 await _dbContext.SaveChangesAsync();
+                TempData["SuccessMessage"] = "User Updated successfully!";
+
 
                 return RedirectToAction("UsersList");
             }

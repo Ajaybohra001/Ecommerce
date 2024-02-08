@@ -10,15 +10,21 @@ namespace SuccessiveCart.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SuccessiveCartDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SuccessiveCartDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            ViewBag.ProductList = _context.Products.ToList();
+            ViewBag.CategoryList = _context.Cateogries.ToList();
+
+            var prod = _context.Products.ToList();
+            return View(prod);
         }
 
         public IActionResult Privacy()

@@ -57,7 +57,7 @@
     </div>
     <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="availableCheckbox" asp-for="IsAvailable">
-        <label class="form-check-label" for="availableCheckbox">Available</label>
+        <label class="form-check-label" for="availableCheckbox">IsActive</label>
     </div>
     <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="trendingCheckbox" asp-for="IsTrending">
@@ -83,3 +83,8 @@
         });
     });
         </script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

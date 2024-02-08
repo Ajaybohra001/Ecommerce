@@ -7,10 +7,10 @@ namespace SuccessiveCart.Models.Domain
         [Key]
         [Required]
         public int CateogryId {  get; set; }
-        [Required]
+        [Required(ErrorMessage = "Category name is required")]
         public string CateogryName { get; set; }
 
-        [Required]
+        
         public string? CateogryPhoto {  get; set; }
 
         public ICollection<Products> Products { get; set; }

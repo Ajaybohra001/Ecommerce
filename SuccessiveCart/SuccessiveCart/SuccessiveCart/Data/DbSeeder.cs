@@ -24,8 +24,8 @@ namespace SuccessiveCart.Data
                 UserRole="Admin",
                
                 UserEmail = "ajay@gmail.com",
-                UserPassword="ajaybohra7",
-                ConfirmPassword="ajaybohra7",
+                UserPassword="Admin@123",
+                ConfirmPassword="Admin@123",
                 UserPhoneNo="8810304137",
                 
             };

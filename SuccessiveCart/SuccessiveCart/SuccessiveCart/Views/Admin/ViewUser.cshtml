@@ -54,6 +54,11 @@
     <span asp-validation-summary="All" class="text-danger"></span>
 
  </form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
 
 
 
