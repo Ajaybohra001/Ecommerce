@@ -1,107 +1,143 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SuccessiveCart
 build_property.RootNamespace = SuccessiveCart
-build_property.ProjectDir = C:\Users\ajay.bohra\Documents\SuccessiveCart\SuccessiveCart\SuccessiveCart\
+build_property.ProjectDir = C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ajay.bohra\Documents\SuccessiveCart\SuccessiveCart\SuccessiveCart
+build_property.MSBuildProjectDirectory = C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/wwwroot/ViewUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxWaWV3VXNlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddCateogry.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddCateogry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZW9ncnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddProducts.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddUser.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/CateogryList.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/CateogryList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZW9ncnlMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ProductList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdExpc3QuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/Products.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/UsersList.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/UsersList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewCateogry.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewCateogry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld0NhdGVvZ3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewProduct.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld1Byb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewUser.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Admin/ViewUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlld1VzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Home/Index.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Cart/AllProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxBbGxQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Cart/MyCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxNeUNhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Favourite/FavouriteProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlXEZhdm91cml0ZVByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/ForgotPassword/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9yZ290UGFzc3dvcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Home/Privacy.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/AdminDashboard.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/LogIn.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9nSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/UserDashboard.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Login/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVXNlckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/Error.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/SignUp/SignUp.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/SignUp/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXFNpZ25VcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/_ViewImports.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/UserProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclByb2ZpbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/UserProfile/UserProfileView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclByb2ZpbGVcVXNlclByb2ZpbGVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Verification/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2F0aW9uXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Verification/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyaWZpY2F0aW9uXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/_ViewStart.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ajay.bohra/Documents/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/_Layout.cshtml]
+[C:/Users/ajay.bohra/Documents/SuccessiveEcommerce/SuccessiveCart/SuccessiveCart/SuccessiveCart/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ogaesovnd2
