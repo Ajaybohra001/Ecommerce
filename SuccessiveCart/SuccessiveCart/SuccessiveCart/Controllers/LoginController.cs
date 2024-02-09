@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Models.Dto;
+using SuccessiveCart.Service;
 
 namespace SuccessiveCart.Controllers
 {
@@ -18,6 +19,7 @@ namespace SuccessiveCart.Controllers
         public LoginController(SuccessiveCartDbContext cartContext)
         {
             _cartContext = cartContext;
+          
             
         }
         [Authorize(Roles ="Admin")]

@@ -7,6 +7,7 @@ using SuccessiveCart.Constant;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
 using SuccessiveCart.Models.Dto;
+using SuccessiveCart.Service;
 using System.Reflection.Metadata.Ecma335;
 
 namespace SuccessiveCart.Controllers
@@ -20,25 +21,29 @@ namespace SuccessiveCart.Controllers
         private readonly SignInManager<Users> _signInManager;
         private readonly UserManager<Users> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly Email _email;
 
-        public AdminController(SuccessiveCartDbContext dbContext,IWebHostEnvironment webHostEnvironment, SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager)
+        public AdminController(SuccessiveCartDbContext dbContext, IWebHostEnvironment webHostEnvironment, SignInManager<Users> signInManager, UserManager<Users> userManager, RoleManager<IdentityRole> roleManager, Email email)
         {
             _dbContext = dbContext;
-            this.WebHostEnvironment= webHostEnvironment;
-            _dbContext.Products.Include(u=>u.Cateogries);
-            _signInManager= signInManager;
-            _userManager= userManager;
-            _roleManager= roleManager;
+            this.WebHostEnvironment = webHostEnvironment;
+            _dbContext.Products.Include(u => u.Cateogries);
+            _signInManager = signInManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _email = email;
             
         }
        
 
         
-        public IActionResult Products()
-        {
-            var products = _dbContext.Products.ToList();
-            return View(products);
-        }
+        //public IActionResult Products()
+        //{
+        //    var products = _dbContext.Products.ToList();
+
+            
+        //    return View(products);
+        //}
 
 
 
@@ -257,6 +262,11 @@ namespace SuccessiveCart.Controllers
         public async Task<IActionResult> ViewUser(UserViewModel model)
         {
             var user = await _userManager.FindByIdAsync(model.Id);
+            if (user == null)
+                return NotFound();
+
+            var oldPassword = user.UserPassword;
+
             if (user != null)
             {
                 user.Name = model.Name;
@@ -281,10 +291,14 @@ namespace SuccessiveCart.Controllers
                     }
                     user.UserPassword = model.UserPassword;
                     user.ConfirmPassword=model.UserPassword;
+
                 }
-                
+
 
                 await _dbContext.SaveChangesAsync();
+                if(oldPassword!=user.UserPassword)
+                await _email.SendEmail( model.UserEmail, "The password of your Successive Cart is changed Successfully by Admin", "New Password-" + user.UserPassword);
+
                 TempData["SuccessMessage"] = "User Updated successfully!";
 
 

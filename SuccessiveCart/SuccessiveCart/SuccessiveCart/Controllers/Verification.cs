@@ -48,7 +48,7 @@ namespace SuccessiveCart.Controllers
         {
                 if (ModelState.IsValid)
                 {
-                bool checkActive = _userManager.Users.FirstOrDefault(c=>c.UserName==model.UserName).isActive;
+                bool checkActive =_userManager.Users.FirstOrDefault(c=>c.UserName==model.UserName).isActive;
                 if (checkActive)
                 {
                     //login

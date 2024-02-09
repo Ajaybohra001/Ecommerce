@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using SuccessiveCart.Data;
 using SuccessiveCart.Models.Domain;
+using SuccessiveCart.Service;
 
 namespace SuccessiveCart
 {
@@ -28,6 +29,9 @@ namespace SuccessiveCart
         options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+/ ";
     })
     .AddEntityFrameworkStores<SuccessiveCartDbContext>().AddDefaultTokenProviders();
+
+            //email
+            builder.Services.AddTransient<Email>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
