@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuccessiveCart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12010eedcb677c3f2532bd58c5687cf4410ae5f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f219f0c70b9e4f3e8e0b1030e772789618a2acf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuccessiveCart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuccessiveCart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

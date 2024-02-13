@@ -393,3 +393,12 @@ C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\
 C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\ajay.bohra\Documents\SuccessiveEcommerce\SuccessiveCart\SuccessiveCart\SuccessiveCart\bin\Debug\net8.0\NgrokAspNetCore.Lib.dll

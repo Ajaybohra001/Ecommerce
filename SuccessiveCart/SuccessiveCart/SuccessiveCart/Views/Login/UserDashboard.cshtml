@@ -26,6 +26,7 @@
     <title>User Dashboard</title>
 
     <style>
+       
         .filter-section {
             display: flex;
             justify-content: space-between;
@@ -43,11 +44,29 @@
             .filter-section input[type="text"] {
                 width: 100%;
                 margin-bottom: 10px;
-                padding: 8px;
+                padding: 6px; 
                 border-radius: 5px;
                 border: 1px solid #ccc;
                 box-sizing: border-box;
             }
+
+            .filter-section input[type="number"] {
+                width: calc(50% - 5px); 
+            }
+
+                .filter-section input[type="number"]:first-child {
+                    margin-right: 5px; 
+                }
+
+            .filter-section select {
+                width: calc(50% - 5px); 
+            }
+
+            .filter-section input[type="text"] {
+                width: calc(86% - 6px); 
+            }
+
+
 
         .product-row {
             display: flex;
@@ -64,6 +83,7 @@
             width: calc(25% - 20px);
             margin: 10px;
             box-sizing: border-box;
+            position:relative;
         }
 
             .product-card:hover {
@@ -91,7 +111,7 @@
 
         .product-price {
             font-size: 14px;
-            color: crimson;
+            color: black;
             margin-bottom: 10px;
         }
 
@@ -101,22 +121,51 @@
             margin-top: 10px;
         }
 
-        /* Adjust button styles */
         .favorite-btn,
-        .add-to-cart-btn {
-            padding: 8px 20px;
-            border-radius: 5px;
+        .myButton {
+           padding:6px;
+            border-radius: 6px;
+            background-color: #000000;
+            color:white;
         }
-
+        .myButton:hover{
+            color:white;
+                background-color: green;
+        }
+/* 
             .favorite-btn:hover,
             .add-to-cart-btn:hover {
-                background: #0056b3;
+                background-color: #0056b3;
+                color:white;
             }
-
+ */
         .heading-center {
             text-align: center;
             margin-bottom: 20px;
         }
+
+        .btn-primary {
+            color: #fff;
+            /* background-color: #007bff; */
+        }
+
+        .add-to-favorite-btn {
+            position: absolute;
+            top: 10px; 
+            left: 10px; 
+            background-color: transparent; 
+            border: none;
+            color: #000;
+            cursor: pointer; 
+        }
+
+        .addToCartButton {
+            background-color: #000000;
+        }
+
+            .addToCartButton:hover {
+                background-color: #333333; /* Change the background color on hover */
+            }
 
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -183,7 +232,7 @@
 
         <div class="filter-section">
             <div>
-                <label for="categoryFilter">Category:</label>
+                <label for="categoryFilter">Category:</label><br />
                 <select id="categoryFilter" onchange="filterProducts()">
                     <option value="">All Categories</option>
                     @foreach (var category in CategoryList)
@@ -192,14 +241,21 @@
                     }
                 </select>
             </div>
+           
             <div>
-                <label for="searchInput">Search:</label>
-                <input type="text" id="searchInput" placeholder="Enter keywords" oninput="searchProducts()">
-            </div>
-            <div>
-                <label for="minPrice">Price Range:</label>
+               @*  <label for="minPrice">Price Range:</label>
                 <input type="number" id="minPrice" placeholder="Min Price" onchange="filterProducts()">
-                <input type="number" id="maxPrice" placeholder="Max Price" onchange="filterProducts()">
+                <input type="number" id="maxPrice" placeholder="Max Price" onchange="filterProducts()"> *@
+            <label for="minPrice">Price Range:</label>
+            <div style="display: flex; height:46px;">
+                <input type="number" id="minPrice" placeholder="Min" onchange="filterProducts()">
+                <span style="margin: 0 5px;">-</span> <!-- Separator between min and max -->
+                <input type="number" id="maxPrice" placeholder="Max" onchange="filterProducts()">
+            </div>
+            </div>
+             <div style="margin-left:70px;">
+                <label for="searchInput">Search:</label><br />
+                <input type="text" id="searchInput" placeholder="Enter keywords" oninput="searchProducts()">
             </div>
         </div>
         <div class="trending-products">
@@ -227,8 +283,9 @@
                                     {
                                         <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
 
-                                            <button class="btn btn-primary favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
+                                            @* <button class="btn favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button> *@
 
+                                            <button class="btn favorite-btn add-to-favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
 
                                         </form>
                                     }
@@ -237,7 +294,7 @@
                                     {
                                         <form asp-controller="Verification" asp-action="Login"  method="post">
 
-                                            <button class="btn btn-primary favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
+                                        <button class="btn  favorite-btn add-to-favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
 
 
                                         </form>
@@ -246,14 +303,14 @@
                                     {@if(User.IsInRole("User"))
                                     {
                                         <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
-                                            <button type="submit" class="btn btn-success">🛒</button>
+                                            <button type="submit" class="btn myButton">🛒 Add To Cart</button>
                                         </form>
                                     }
                                     }
                                     else
                                     {
                                         <form asp-controller="Verification" asp-action="Login" method="post">
-                                            <button type="submit" class="btn btn-success">🛒</button>
+                                        <button type="submit" class="btn myButton" >🛒 Add To Cart</button>
                                         </form>
                                     }
                                 </div>
@@ -288,7 +345,7 @@
                             @if (User.IsInRole("User")){
                                 <form asp-controller="Favourite" asp-action="AddToFavourite" asp-route-id="@product.ProductId" method="post">
 
-                                    <button class="btn btn-primary favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
+                                    <button class="btn  favorite-btn add-to-favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
 
 
                                 </form>
@@ -298,7 +355,7 @@
                             {
                                 <form asp-controller="Verification" asp-action="Login" method="post">
 
-                                    <button class="btn btn-primary favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
+                                <button class="btn  favorite-btn add-to-favorite-btn" onclick="toggleFavorite(this)" data-product-id="@product.ProductId">❤<i class="fa-regular fa-heart"></i></button>
 
 
                                 </form>
@@ -306,14 +363,18 @@
                             @if (sign.IsSignedIn(User))
                         {@if (User.IsInRole("User")){
                                 <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@product.ProductId" method="post">
-                                    <button type="submit" class="btn btn-success">🛒</button>
+                                    <button type="submit" class="btn myButton" >
+                                        🛒 Add To Cart
+                                    </button>
                                 </form>
                         }
                             }
                             else
                             {
                                 <form asp-controller="Verification" asp-action="Login" method="post">
-                                    <button type="submit" class="btn btn-success">🛒</button>
+                                <button type="submit" class="btn btn myButton" >
+                                    🛒 Add To Cart
+                                </button>
                                 </form>
                             }
                         </div>
@@ -323,15 +384,7 @@
         </div>
 
     
-    @* else
-    {
-        <script>
-            window.location.href = '/Login/AdminDashboard';
-        </script>
 
-
-        
-    } *@
     
 
 
